@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -1185,12 +1185,32 @@
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
             }
+            .md-message-grid {
+                gap: 40px;
+            }
+            .md-image .md-photo-placeholder {
+                max-width: 320px;
+            }
         }
 
         @media (max-width: 900px) {
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: 40px;
+            }
+            .md-message-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .md-content {
+                order: 2;
+            }
+            .md-image {
+                order: 1;
+            }
+            .md-image .md-photo-placeholder {
+                max-width: 280px;
+                aspect-ratio: 1 / 1.05;
             }
             .about-image {
                 order: -1;
@@ -1223,6 +1243,41 @@
         @media (max-width: 768px) {
             :root {
                 --nav-height: 64px;
+            }
+
+            .md-message {
+                padding: 60px 0;
+            }
+            .md-content .md-quote-icon {
+                font-size: 2.2rem;
+                margin-bottom: 8px;
+            }
+            .md-content .md-label-badge {
+                font-size: 0.6rem;
+                padding: 5px 12px;
+            }
+            .md-content h2 {
+                font-size: clamp(1.5rem, 5vw, 2rem);
+            }
+            .md-content p {
+                font-size: 0.98rem;
+                line-height: 1.7;
+            }
+            .md-signature {
+                margin-top: 20px;
+                padding-top: 18px;
+            }
+            .md-image .md-photo-placeholder {
+                max-width: 240px;
+                font-size: 6rem;
+            }
+            .md-image .md-photo-placeholder .md-initials {
+                font-size: 4rem;
+                letter-spacing: 3px;
+            }
+            .md-image .md-photo-placeholder .md-name-overlay {
+                font-size: 0.75rem;
+                bottom: 20px;
             }
 
             .nav-links {
@@ -1362,6 +1417,32 @@
             .business-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 12px;
+            }
+
+            .md-message {
+                padding: 48px 0;
+            }
+            .md-message-grid {
+                gap: 24px;
+            }
+            .md-content h2 {
+                font-size: 1.4rem;
+            }
+            .md-content p {
+                font-size: 0.92rem;
+            }
+            .md-image .md-photo-placeholder {
+                max-width: 100%;
+                aspect-ratio: 1 / 1.1;
+                font-size: 4.8rem;
+            }
+            .md-image .md-photo-placeholder .md-initials {
+                font-size: 3rem;
+            }
+            .md-image .md-photo-placeholder .md-name-overlay {
+                font-size: 0.7rem;
+                bottom: 16px;
+                padding: 0 12px;
             }
 
             .business-card {
