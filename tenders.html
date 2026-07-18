@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nile Petroleum Corporation â€“ Active Tenders & Procurement</title>
+    <meta name="description" content="Explore active tenders, bids, and procurement opportunities at Nile Petroleum Corporation, South Sudan's National Oil Company." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --deep-blue: #00072D;
+            --green: #000000;
+            --gold: #0A6ED3;
+            --white: #ffffff;
+            --light-gray: #f5f7fa;
+            --medium-gray: #e8ecf1;
+            --dark-gray: #000000;
+            --text-dark: #000000;
+            --text-muted: #1f1f1f;
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --radius: 12px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            --nav-height: 76px;
+        }
+
+        /* ===== Reset & Base ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background: var(--light-gray);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== Typography ===== */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            background: rgba(10, 110, 211, 0.12);
+            padding: 4px 16px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--deep-blue);
+            margin-bottom: 16px;
+        }
+
+        .section-title span {
+            color: var(--gold);
+        }
+
+        .section-sub {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 640px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 14px 34px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--deep-blue);
+            box-shadow: 0 4px 16px rgba(10, 110, 211, 0.35);
+        }
+        .btn-primary:hover {
+            background: #0A6ED3;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(10, 110, 211, 0.45);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(4px);
+        }
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-blue {
+            background: transparent;
+            color: var(--deep-blue);
+            border: 2px solid var(--deep-blue);
+        }
+        .btn-outline-blue:hover {
+            background: var(--deep-blue);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .btn-gold {
+            background: var(--gold);
+            color: var(--deep-blue);
+        }
+        .btn-gold:hover {
+            background: #0A6ED3;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(10, 110, 211, 0.4);
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--deep-blue);
+        }
+        .btn-white:hover {
+            background: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: var(--nav-height);
+            background: rgba(0, 7, 45, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            background: rgba(0, 7, 45, 0.98);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--white);
+            flex-shrink: 0;
+        }
+
+        .nav-logo .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--deep-blue);
+            font-size: 1.4rem;
+            font-weight: 900;
+            flex-shrink: 0;
+        }
+
+        .nav-logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: var(--transition);
+            letter-spacing: 0.2px;
+            position: relative;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--white);
+            background: rgba(10, 110, 211, 0.15);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 4px;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .nav-actions .search-btn,
+        .nav-actions .lang-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: none;
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-actions .search-btn:hover,
+        .nav-actions .lang-btn:hover {
+            background: rgba(10, 110, 211, 0.2);
+            color: var(--gold);
+        }
+
+        .lang-btn {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.7rem !important;
+            letter-spacing: 0.5px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--white);
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ===== PAGE HERO (Sub) ===== */
+        .page-hero {
+            padding: calc(var(--nav-height) + 48px) 0 60px;
+            background: var(--deep-blue);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .page-hero-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                url('https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=1600&q=80') center/cover no-repeat;
+            opacity: 0.2;
+            transform: scale(1.05);
+        }
+
+        .page-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 50% 50%, rgba(0, 7, 45, 0.6) 0%, #00072D 100%);
+        }
+
+        .page-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-hero h1 {
+            font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+            font-weight: 900;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .page-hero h1 span {
+            color: var(--gold);
+        }
+
+        .page-hero p {
+            font-size: clamp(1rem, 1.3vw, 1.2rem);
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 580px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* ===== FILTER SECTION ===== */
+        .filter-section {
+            background: var(--white);
+            padding: 32px 0;
+            border-bottom: 1px solid var(--medium-gray);
+            position: sticky;
+            top: var(--nav-height);
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        .filter-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: flex-end;
+        }
+
+        .filter-grid .filter-group {
+            flex: 1 1 200px;
+            min-width: 160px;
+        }
+
+        .filter-grid .filter-group label {
+            display: block;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .filter-grid .filter-group .form-control {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1.5px solid var(--medium-gray);
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            transition: var(--transition);
+            background: var(--white);
+            color: var(--text-dark);
+            appearance: none;
+            -webkit-appearance: none;
+        }
+
+        .filter-grid .filter-group .form-control:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(10, 110, 211, 0.15);
+        }
+
+        .filter-grid .filter-group .form-control option {
+            padding: 8px;
+        }
+
+        .filter-grid .filter-actions {
+            display: flex;
+            gap: 10px;
+            flex: 0 0 auto;
+            align-items: center;
+        }
+
+        .filter-grid .filter-actions .btn {
+            padding: 10px 24px;
+            font-size: 0.85rem;
+            border-radius: 8px;
+        }
+
+        .filter-grid .filter-actions .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--medium-gray);
+            color: var(--text-muted);
+        }
+
+        .filter-grid .filter-actions .btn-outline:hover {
+            border-color: var(--deep-blue);
+            color: var(--deep-blue);
+            background: rgba(0, 7, 45, 0.04);
+        }
+
+        .filter-results-info {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            padding: 12px 0 4px;
+            border-top: 1px solid var(--medium-gray);
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .filter-results-info strong {
+            color: var(--deep-blue);
+        }
+
+        /* ===== TENDERS TABLE ===== */
+        .tenders-section {
+            padding: 40px 0 80px;
+        }
+
+        .tenders-table-wrap {
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .tenders-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            min-width: 760px;
+        }
+
+        .tenders-table thead {
+            background: var(--light-gray);
+            border-bottom: 2px solid var(--medium-gray);
+        }
+
+        .tenders-table thead th {
+            text-align: left;
+            padding: 16px 20px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+
+        .tenders-table tbody tr {
+            border-bottom: 1px solid var(--medium-gray);
+            transition: var(--transition);
+        }
+
+        .tenders-table tbody tr:hover {
+            background: rgba(0, 7, 45, 0.02);
+        }
+
+        .tenders-table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .tenders-table tbody td {
+            padding: 16px 20px;
+            vertical-align: middle;
+            color: var(--text-dark);
+        }
+
+        .tenders-table .tender-id {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--deep-blue);
+            font-size: 0.85rem;
+        }
+
+        .tenders-table .tender-title {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .tenders-table .tender-title a {
+            color: var(--deep-blue);
+            transition: var(--transition);
+        }
+
+        .tenders-table .tender-title a:hover {
+            color: var(--gold);
+        }
+
+        .tenders-table .tender-category {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .tenders-table .tender-location {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .tenders-table .tender-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+
+        /* ===== BADGES ===== */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.7rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .badge-open {
+            background: rgba(0, 150, 57, 0.12);
+            color: var(--green);
+        }
+
+        .badge-closing {
+            background: rgba(10, 110, 211, 0.2);
+            color: #b7791f;
+        }
+
+        .badge-closed {
+            background: rgba(0, 0, 0, 0.06);
+            color: var(--text-muted);
+        }
+
+        .badge i {
+            font-size: 0.55rem;
+        }
+
+        .tenders-table .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.75rem;
+            background: var(--light-gray);
+            color: var(--deep-blue);
+            border: 1px solid transparent;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .tenders-table .action-btn:hover {
+            background: var(--deep-blue);
+            color: var(--white);
+            border-color: var(--deep-blue);
+        }
+
+        .tenders-table .action-btn i {
+            font-size: 0.8rem;
+        }
+
+        /* ===== PAGINATION ===== */
+        .pagination-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding-top: 32px;
+        }
+
+        .pagination-wrap .pagination {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .pagination-wrap .pagination .page-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 40px;
+            height: 40px;
+            padding: 0 12px;
+            border-radius: 8px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border: 1px solid transparent;
+            transition: var(--transition);
+            cursor: pointer;
+            background: transparent;
+        }
+
+        .pagination-wrap .pagination .page-item.active {
+            background: var(--deep-blue);
+            color: var(--white);
+            border-color: var(--deep-blue);
+        }
+
+        .pagination-wrap .pagination .page-item:hover:not(.active) {
+            background: var(--light-gray);
+            border-color: var(--medium-gray);
+        }
+
+        .pagination-wrap .pagination .page-item.disabled {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .pagination-wrap .pagination .page-item.arrow {
+            font-size: 1rem;
+        }
+
+        /* ===== CTA BANNER ===== */
+        .cta-banner {
+            background: var(--deep-blue);
+            padding: 48px 0;
+            margin-top: 40px;
+            border-radius: var(--radius);
+            text-align: center;
+            color: var(--white);
+        }
+
+        .cta-banner h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .cta-banner h2 span {
+            color: var(--gold);
+        }
+
+        .cta-banner p {
+            color: rgba(255, 255, 255, 0.75);
+            max-width: 500px;
+            margin: 0 auto 24px;
+            font-size: 1rem;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--deep-blue);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 60px 0 30px;
+            margin-top: 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .footer-brand .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: var(--white);
+            margin-bottom: 14px;
+        }
+
+        .footer-brand .logo .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--deep-blue);
+            font-weight: 900;
+        }
+
+        .footer-brand p {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            max-width: 300px;
+        }
+
+        .footer h4 {
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer ul li a:hover {
+            color: var(--gold);
+        }
+
+        .footer .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 6px;
+        }
+
+        .footer .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer .social-links a:hover {
+            background: var(--gold);
+            color: var(--deep-blue);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding-top: 28px;
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom a {
+            color: rgba(255, 255, 255, 0.5);
+            transition: var(--transition);
+        }
+
+        .footer-bottom a:hover {
+            color: var(--gold);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --nav-height: 64px;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: var(--nav-height);
+                left: 0;
+                right: 0;
+                background: rgba(0, 7, 45, 0.98);
+                backdrop-filter: blur(12px);
+                flex-direction: column;
+                padding: 24px 28px 32px;
+                gap: 4px;
+                transform: translateY(-120%);
+                transition: var(--transition);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                max-height: calc(100vh - var(--nav-height));
+                overflow-y: auto;
+            }
+
+            .nav-links.open {
+                transform: translateY(0);
+            }
+
+            .nav-links a {
+                font-size: 1rem;
+                padding: 12px 16px;
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .nav-links a.active::after {
+                display: none;
+            }
+
+            .nav-links a.active {
+                background: rgba(10, 110, 211, 0.15);
+                color: var(--gold);
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-actions .search-btn,
+            .nav-actions .lang-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 0.9rem;
+            }
+
+            .page-hero {
+                padding: calc(var(--nav-height) + 32px) 0 40px;
+            }
+
+            .filter-section {
+                position: relative;
+                top: 0;
+                padding: 20px 0;
+            }
+
+            .filter-grid {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .filter-grid .filter-group {
+                flex: 1 1 100%;
+                min-width: unset;
+            }
+
+            .filter-grid .filter-actions {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .filter-grid .filter-actions .btn {
+                flex: 1;
+                justify-content: center;
+            }
+
+            .tenders-table-wrap {
+                border-radius: 8px;
+            }
+
+            .tenders-table tbody td,
+            .tenders-table thead th {
+                padding: 12px 14px;
+                font-size: 0.8rem;
+            }
+
+            .tenders-table .tender-title {
+                font-size: 0.85rem;
+            }
+
+            .pagination-wrap {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cta-banner {
+                padding: 32px 20px;
+            }
+            .cta-banner h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-logo {
+                font-size: 1rem;
+            }
+            .nav-logo .logo-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 1.1rem;
+            }
+
+            .tenders-table .action-btn span {
+                display: none;
+            }
+            .tenders-table .action-btn i {
+                font-size: 1rem;
+            }
+            .tenders-table .action-btn {
+                padding: 6px 10px;
+            }
+        }
+
+        /* ===== UTILITY ===== */
+        .text-center {
+            text-align: center;
+        }
+        .mt-8 {
+            margin-top: 8px;
+        }
+        .mt-16 {
+            margin-top: 16px;
+        }
+        .gap-12 {
+            gap: 12px;
+        }
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== SCROLLBAR ===== */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--light-gray);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--deep-blue);
+            border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold);
+        }
+
+        /* ===== NO RESULTS ===== */
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+        }
+        .no-results i {
+            font-size: 2.5rem;
+            color: var(--medium-gray);
+            margin-bottom: 12px;
+        }
+        .no-results h4 {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="index.html" class="nav-logo" aria-label="Nile Petroleum Corporation Home">
+                <span class="logo-icon">N</span>
+                Nile<span>Pet</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="index.html#about" role="menuitem">About Us</a></li>
+                <li role="none"><a href="index.html#business" role="menuitem">Our Business</a></li>
+                <li role="none"><a href="index.html#operations" role="menuitem">Operations</a></li>
+                <li role="none"><a href="index.html#news" role="menuitem">News &amp; Media</a></li>
+                <li role="none"><a href="index.html#careers" role="menuitem">Careers</a></li>
+                <li role="none"><a href="tenders.html" role="menuitem" class="active">Tenders</a></li>
+                <li role="none"><a href="index.html#contact" role="menuitem">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="search-btn" aria-label="Search" title="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="lang-btn" aria-label="Toggle language" title="Language">
+                    EN
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="page-hero-bg" aria-hidden="true"></div>
+        <div class="page-hero-overlay" aria-hidden="true"></div>
+        <div class="container">
+            <span class="section-label" style="background: rgba(255,184,28,0.2); color: var(--gold);">
+             Procurement
+            </span>
+            <h1>Active Tenders &amp; Bids</h1>
+            <p>
+                Explore open procurement opportunities for goods, services, and works.
+                Join us in building South Sudan&rsquo;s energy infrastructure.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== FILTER SECTION ===== -->
+    <section class="filter-section" id="filterSection">
+        <div class="container">
+            <div class="filter-grid">
+                <div class="filter-group">
+                    <label for="searchInput"><i class="fas fa-search"></i> Search</label>
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search by title or ID..." />
+                </div>
+                <div class="filter-group">
+                    <label for="categorySelect">Category</label>
+                    <select id="categorySelect" class="form-control">
+                        <option value="all">All Categories</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="IT">IT &amp; Technology</option>
+                        <option value="Consulting">Consulting</option>
+                        <option value="Construction">Construction</option>
+                        <option value="Services">Services</option>
+                        <option value="Logistics">Logistics</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="statusSelect">Status</label>
+                    <select id="statusSelect" class="form-control">
+                        <option value="all">All Statuses</option>
+                        <option value="Open">Open</option>
+                        <option value="Closing Soon">Closing Soon</option>
+                        <option value="Closed">Closed</option>
+                    </select>
+                </div>
+                <div class="filter-actions">
+                    <button class="btn btn-outline" id="clearFiltersBtn">
+                        <i class="fas fa-times"></i> Clear
+                    </button>
+                </div>
+            </div>
+            <div class="filter-results-info">
+                <span>Showing <strong id="visibleCount">0</strong> of <strong id="totalCount">0</strong> tenders</span>
+                <span>Last updated: July 18, 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TENDERS TABLE ===== -->
+    <section class="tenders-section">
+        <div class="container">
+            <div class="tenders-table-wrap fade-up">
+                <table class="tenders-table" id="tendersTable">
+                    <thead>
+                        <tr>
+                            <th>Tender ID</th>
+                            <th>Title &amp; Description</th>
+                            <th>Category</th>
+                            <th>Location</th>
+                            <th>Closing Date</th>
+                            <th>Status</th>
+                            <th style="text-align: center;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tendersBody">
+                        <!-- Rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+                <div id="noResults" class="no-results" style="display: none;">
+                    <i class="fas fa-inbox"></i>
+                    <h4>No tenders found</h4>
+                    <p>Try adjusting your search or filter criteria.</p>
+                </div>
+            </div>
+
+            <!-- ===== PAGINATION ===== -->
+            <div class="pagination-wrap">
+                <div class="pagination">
+                    <button class="page-item arrow" id="prevPage" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="page-item active" data-page="1">1</button>
+                    <button class="page-item" data-page="2">2</button>
+                    <button class="page-item" data-page="3">3</button>
+                    <button class="page-item arrow" id="nextPage">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <span style="font-size: 0.9rem; color: var(--text-muted);">
+                    Page <strong id="currentPageDisplay">1</strong> of <strong id="totalPagesDisplay">3</strong>
+                </span>
+            </div>
+
+            <!-- ===== CTA BANNER ===== -->
+            <div class="cta-banner fade-up" style="margin-top: 48px;">
+                <div class="container">
+                    <h2>Need help with your bid?</h2>
+                    <p>
+                        Our procurement team is available to assist you with the tendering process.
+                        Contact us for clarification or support.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-headset"></i> Contact Procurement
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">N</span>
+                        Nile<span>Pet</span>
+                    </div>
+                    <p>
+                        South Sudan&rsquo;s National Oil Company, mandated to manage and develop
+                        the nation&rsquo;s petroleum resources for the benefit of all.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#business">Our Business</a></li>
+                        <li><a href="index.html#news">News &amp; Media</a></li>
+                        <li><a href="index.html#careers">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Operations</h4>
+                    <ul>
+                        <li><a href="index.html#business">Upstream</a></li>
+                        <li><a href="index.html#business">Downstream</a></li>
+                        <li><a href="index.html#business">Gas</a></li>
+                        <li><a href="index.html#business">Joint Ventures</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="tenders.html">Tenders</a></li>
+                        <li><a href="#">PetroQuest Magazine</a></li>
+                        <li><a href="#">Annual Reports</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Nile Petroleum Corporation. All rights reserved.</span>
+                <span>
+                    <a href="#">Privacy Policy</a> &middot;
+                    <a href="#">Terms of Use</a> &middot;
+                    <a href="#">Accessibility</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // ---- Mobile Menu ----
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburger.addEventListener('click', function() {
+                const expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                this.setAttribute('aria-expanded', expanded);
+                this.classList.toggle('active');
+                navLinks.classList.toggle('open');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    navLinks.classList.remove('open');
+                });
+            });
+
+            // ---- Sticky Navbar ----
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                if (currentScroll > 60) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // ---- Scroll Animations ----
+            const fadeElements = document.querySelectorAll('.fade-up');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+            fadeElements.forEach(el => observer.observe(el));
+
+            // ---- Search & Language ----
+            document.querySelector('.search-btn').addEventListener('click', function() {
+                alert('ðŸ” Search functionality coming soon.');
+            });
+
+            const langBtn = document.querySelector('.lang-btn');
+            let lang = 'EN';
+            langBtn.addEventListener('click', function() {
+                lang = lang === 'EN' ? 'AR' : 'EN';
+                this.textContent = lang;
+            });
+
+            // ============================================================
+            //  TENDERS DATA
+            // ============================================================
+            const tendersData = [{
+                id: 'NPT-2026-021',
+                title: 'Supply of Drilling Equipment &amp; Spare Parts',
+                category: 'Engineering',
+                location: 'Juba &amp; Oil Fields',
+                closing: '2026-08-15',
+                status: 'Open'
+            }, {
+                id: 'NPT-2026-018',
+                title: 'IT Network Infrastructure Upgrade (Phase 2)',
+                category: 'IT',
+                location: 'Juba HQ',
+                closing: '2026-07-25',
+                status: 'Closing Soon'
+            }, {
+                id: 'NPT-2026-015',
+                title: 'Environmental Impact Assessment Consultancy',
+                category: 'Consulting',
+                location: 'Jonglei State',
+                closing: '2026-09-01',
+                status: 'Open'
+            }, {
+                id: 'NPT-2026-012',
+                title: 'Construction of New Fuel Depot &amp; Storage Tanks',
+                category: 'Construction',
+                location: 'Malakal',
+                closing: '2026-10-10',
+                status: 'Open'
+            }, {
+                id: 'NPT-2026-009',
+                title: 'Provision of Security Services for Oil Fields',
+                category: 'Services',
+                location: 'Various Locations',
+                closing: '2026-06-30',
+                status: 'Closed'
+            }, {
+                id: 'NPT-2026-006',
+                title: 'Audit &amp; Financial Advisory Services',
+                category: 'Consulting',
+                location: 'Juba HQ',
+                closing: '2026-08-22',
+                status: 'Open'
+            }, {
+                id: 'NPT-2026-003',
+                title: 'Logistics &amp; Transportation of Petroleum Products',
+                category: 'Logistics',
+                location: 'Nationwide',
+                closing: '2026-07-18',
+                status: 'Closing Soon'
+            }, {
+                id: 'NPT-2026-001',
+                title: 'Supply of Office Furniture &amp; IT Equipment',
+                category: 'Services',
+                location: 'Juba',
+                closing: '2026-05-15',
+                status: 'Closed'
+            }, {
+                id: 'NPT-2025-098',
+                title: 'Geological Survey &amp; Seismic Data Analysis',
+                category: 'Engineering',
+                location: 'Unity State',
+                closing: '2026-09-20',
+                status: 'Open'
+            }, {
+                id: 'NPT-2025-087',
+                title: 'HR Management Software Implementation',
+                category: 'IT',
+                location: 'Juba HQ',
+                closing: '2026-08-05',
+                status: 'Closing Soon'
+            }, {
+                id: 'NPT-2025-072',
+                title: 'Pipeline Maintenance &amp; Repair Services',
+                category: 'Engineering',
+                location: 'Bentiu',
+                closing: '2026-07-30',
+                status: 'Closing Soon'
+            }, {
+                id: 'NPT-2025-061',
+                title: 'Public Relations &amp; Media Campaign',
+                category: 'Consulting',
+                location: 'Juba',
+                closing: '2026-06-01',
+                status: 'Closed'
+            }];
+
+            // ============================================================
+            //  RENDER & FILTER LOGIC
+            // ============================================================
+            const tbody = document.getElementById('tendersBody');
+            const noResults = document.getElementById('noResults');
+            const searchInput = document.getElementById('searchInput');
+            const categorySelect = document.getElementById('categorySelect');
+            const statusSelect = document.getElementById('statusSelect');
+            const clearBtn = document.getElementById('clearFiltersBtn');
+            const visibleCount = document.getElementById('visibleCount');
+            const totalCount = document.getElementById('totalCount');
+
+            let currentPage = 1;
+            const rowsPerPage = 5;
+            let filteredData = [...tendersData];
+
+            function renderTable(data) {
+                tbody.innerHTML = '';
+                const start = (currentPage - 1) * rowsPerPage;
+                const end = start + rowsPerPage;
+                const pageItems = data.slice(start, end);
+
+                if (data.length === 0) {
+                    noResults.style.display = 'block';
+                    visibleCount.textContent = '0';
+                    totalCount.textContent = '0';
+                    document.getElementById('totalPagesDisplay').textContent = '0';
+                    return;
+                }
+
+                noResults.style.display = 'none';
+                visibleCount.textContent = data.length;
+                totalCount.textContent = tendersData.length;
+
+                pageItems.forEach(item => {
+                    const row = document.createElement('tr');
+
+                    // Status badge
+                    let badgeClass = 'badge-open';
+                    if (item.status === 'Closing Soon') badgeClass = 'badge-closing';
+                    if (item.status === 'Closed') badgeClass = 'badge-closed';
+
+                    // Format date
+                    const dateObj = new Date(item.closing + 'T00:00:00');
+                    const formattedDate = dateObj.toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric'
+                    });
+
+                    row.innerHTML = `
+                        <td><span class="tender-id">${item.id}</span></td>
+                        <td>
+                            <div class="tender-title"><a href="#">${item.title}</a></div>
+                        </td>
+                        <td><span class="tender-category">${item.category}</span></td>
+                        <td><span class="tender-location">${item.location}</span></td>
+                        <td><span class="tender-date">${formattedDate}</span></td>
+                        <td><span class="badge ${badgeClass}"><i class="fas fa-circle"></i> ${item.status}</span></td>
+                        <td style="text-align: center;">
+                            <button class="action-btn" onclick="alert('ðŸ“„ Downloading details for ${item.id}')">
+                                <i class="fas fa-file-pdf"></i> <span>PDF</span>
+                            </button>
+                        </td>
+                    `;
+                    tbody.appendChild(row);
+                });
+
+                // Update pagination info
+                const totalPages = Math.ceil(data.length / rowsPerPage);
+                document.getElementById('totalPagesDisplay').textContent = totalPages || 1;
+                document.getElementById('currentPageDisplay').textContent = currentPage;
+
+                // Update page buttons
+                document.querySelectorAll('.pagination .page-item[data-page]').forEach(btn => {
+                    const page = parseInt(btn.dataset.page);
+                    btn.classList.toggle('active', page === currentPage);
+                });
+
+                // Update prev/next
+                document.getElementById('prevPage').disabled = currentPage === 1;
+                document.getElementById('nextPage').disabled = currentPage >= totalPages;
+
+                // Adjust page buttons visibility
+                const pageBtns = document.querySelectorAll('.pagination .page-item[data-page]');
+                pageBtns.forEach(btn => {
+                    const page = parseInt(btn.dataset.page);
+                    if (page > totalPages) {
+                        btn.style.display = 'none';
+                    } else {
+                        btn.style.display = 'inline-flex';
+                    }
+                });
+            }
+
+            function filterData() {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                const category = categorySelect.value;
+                const status = statusSelect.value;
+
+                filteredData = tendersData.filter(item => {
+                    const matchesSearch = item.id.toLowerCase().includes(searchTerm) ||
+                        item.title.toLowerCase().includes(searchTerm) ||
+                        item.category.toLowerCase().includes(searchTerm) ||
+                        item.location.toLowerCase().includes(searchTerm);
+                    const matchesCategory = category === 'all' || item.category === category;
+                    const matchesStatus = status === 'all' || item.status === status;
+                    return matchesSearch && matchesCategory && matchesStatus;
+                });
+
+                currentPage = 1;
+                renderTable(filteredData);
+            }
+
+            // ---- Event Listeners ----
+            searchInput.addEventListener('input', filterData);
+            categorySelect.addEventListener('change', filterData);
+            statusSelect.addEventListener('change', filterData);
+
+            clearBtn.addEventListener('click', function() {
+                searchInput.value = '';
+                categorySelect.value = 'all';
+                statusSelect.value = 'all';
+                filterData();
+            });
+
+            // ---- Pagination ----
+            document.querySelectorAll('.pagination .page-item[data-page]').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const page = parseInt(this.dataset.page);
+                    const totalPages = Math.ceil(filteredData.length / rowsPerPage);
+                    if (page >= 1 && page <= totalPages) {
+                        currentPage = page;
+                        renderTable(filteredData);
+                    }
+                });
+            });
+
+            document.getElementById('prevPage').addEventListener('click', function() {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderTable(filteredData);
+                }
+            });
+
+            document.getElementById('nextPage').addEventListener('click', function() {
+                const totalPages = Math.ceil(filteredData.length / rowsPerPage);
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderTable(filteredData);
+                }
+            });
+
+            // ---- Initial Render ----
+            filterData();
+
+            // ---- Sticky Filter on Scroll ----
+            // (Handled by CSS position: sticky)
+
+            // ---- Action button hover (already in CSS) ----
+
+            // ---- Smooth scroll for anchor links ----
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset -
+                            parseInt(getComputedStyle(document.documentElement).getPropertyValue(
+                            '--nav-height')) - 12;
+                        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                    }
+                });
+            });
+
+        });
+    </script>
+
+</body>
+</html>

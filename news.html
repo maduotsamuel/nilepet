@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News & Media â€“ Nile Petroleum Corporation</title>
+    <meta name="description" content="Stay informed with the latest news, press releases, and media resources from Nile Petroleum Corporation, South Sudan's National Oil Company." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --deep-blue: #00072D;
+            --green: #000000;
+            --gold: #0A6ED3;
+            --white: #ffffff;
+            --light-gray: #f5f7fa;
+            --medium-gray: #e8ecf1;
+            --text-dark: #000000;
+            --text-muted: #1f1f1f;
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --radius: 12px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            --nav-height: 76px;
+        }
+
+        /* ===== Reset & Base ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== Typography ===== */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            background: rgba(10, 110, 211, 0.12);
+            padding: 4px 16px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--deep-blue);
+            margin-bottom: 16px;
+        }
+
+        .section-title span {
+            color: var(--gold);
+        }
+
+        .section-sub {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 640px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 14px 34px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--deep-blue);
+            box-shadow: 0 4px 16px rgba(10, 110, 211, 0.35);
+        }
+        .btn-primary:hover {
+            background: #0A6ED3;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(10, 110, 211, 0.45);
+        }
+
+        .btn-secondary-hero {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(4px);
+        }
+        .btn-secondary-hero:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: var(--nav-height);
+            background: rgba(0, 7, 45, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            background: rgba(0, 7, 45, 0.98);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--white);
+            flex-shrink: 0;
+        }
+
+        .nav-logo .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--deep-blue);
+            font-size: 1.4rem;
+            font-weight: 900;
+            flex-shrink: 0;
+        }
+
+        .nav-logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: var(--transition);
+            letter-spacing: 0.2px;
+            position: relative;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--white);
+            background: rgba(10, 110, 211, 0.15);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 4px;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .nav-actions .search-btn,
+        .nav-actions .lang-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: none;
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-actions .search-btn:hover,
+        .nav-actions .lang-btn:hover {
+            background: rgba(10, 110, 211, 0.2);
+            color: var(--gold);
+        }
+
+        .lang-btn {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.7rem !important;
+            letter-spacing: 0.5px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--white);
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ============================================================
+           PAGE HERO
+        ============================================================ */
+        .page-hero {
+            padding: calc(var(--nav-height) + 60px) 0 70px;
+            background: var(--deep-blue);
+            position: relative;
+            overflow: hidden;
+            min-height: 420px;
+        }
+
+        .page-hero-bg {
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&q=80') center/cover no-repeat;
+            opacity: 0.10;
+            transform: scale(1.05);
+        }
+
+        .page-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(0, 7, 45, 0.4) 0%, rgba(0, 7, 45, 0.9) 70%, #00072D 100%);
+        }
+
+        .page-hero .container {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .page-hero .hero-content {
+            max-width: 600px;
+        }
+
+        .page-hero .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(10, 110, 211, 0.15);
+            border: 1px solid rgba(10, 110, 211, 0.2);
+            padding: 6px 18px 6px 12px;
+            border-radius: 50px;
+            color: var(--gold);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(4px);
+        }
+
+        .page-hero h1 {
+            font-size: clamp(2.6rem, 5vw, 4rem);
+            font-weight: 900;
+            color: var(--white);
+            line-height: 1.08;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-hero h1 .highlight {
+            color: var(--gold);
+        }
+
+        .page-hero p {
+            font-size: clamp(1rem, 1.3vw, 1.2rem);
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 480px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .page-hero .hero-cta {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .hero-featured-teaser {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(8px);
+            border-radius: var(--radius);
+            padding: 28px 30px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: var(--transition);
+            min-height: 200px;
+        }
+
+        .hero-featured-teaser:hover {
+            background: rgba(255, 255, 255, 0.10);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-featured-teaser .teaser-label {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            background: rgba(10, 110, 211, 0.15);
+            padding: 3px 14px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+
+        .hero-featured-teaser .teaser-category {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 600;
+            font-family: var(--font-heading);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .hero-featured-teaser h3 {
+            font-size: 1.2rem;
+            color: var(--white);
+            margin: 8px 0 10px;
+            line-height: 1.3;
+        }
+
+        .hero-featured-teaser p {
+            font-size: 0.92rem;
+            color: rgba(255, 255, 255, 0.65);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .hero-featured-teaser .teaser-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+
+        .hero-featured-teaser .teaser-link:hover {
+            gap: 14px;
+            color: var(--white);
+        }
+
+        /* ============================================================
+           NEWS FILTERS
+        ============================================================ */
+        .news-filters {
+            background: var(--white);
+            padding: 20px 0;
+            border-bottom: 2px solid var(--medium-gray);
+            position: sticky;
+            top: var(--nav-height);
+            z-index: 100;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+        }
+
+        .news-filters .filter-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .news-filters .filter-left {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .news-filters .filter-left .filter-label {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 4px;
+        }
+
+        .news-filters .filter-btn {
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.78rem;
+            border: 1.5px solid var(--medium-gray);
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .news-filters .filter-btn:hover {
+            border-color: var(--gold);
+            color: var(--deep-blue);
+        }
+
+        .news-filters .filter-btn.active {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--deep-blue);
+        }
+
+        .news-filters .filter-right {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .news-filters .filter-right strong {
+            color: var(--deep-blue);
+        }
+
+        /* ============================================================
+           NEWS GRID
+        ============================================================ */
+        .news-section {
+            background: var(--light-gray);
+            padding: 40px 0 40px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .news-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--medium-gray);
+        }
+
+        .news-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .news-card .card-image {
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.15);
+            position: relative;
+        }
+
+        .news-card .card-image .category-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(0, 7, 45, 0.85);
+            backdrop-filter: blur(4px);
+            color: var(--white);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.6rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .news-card .card-body {
+            padding: 24px 26px 28px;
+        }
+
+        .news-card .card-body .date {
+            font-size: 0.78rem;
+            color: var(--gold);
+            font-weight: 600;
+            font-family: var(--font-heading);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .news-card .card-body h3 {
+            font-size: 1.1rem;
+            color: var(--deep-blue);
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .news-card .card-body p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .news-card .card-body .read-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--deep-blue);
+            transition: var(--transition);
+        }
+
+        .news-card .card-body .read-link:hover {
+            color: var(--gold);
+            gap: 12px;
+        }
+
+        /* ============================================================
+           MEDIA RESOURCES
+        ============================================================ */
+        .media-resources {
+            background: var(--white);
+            padding: 50px 0 80px;
+        }
+
+        .media-resources .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .media-resources .section-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .resource-card {
+            background: var(--light-gray);
+            border-radius: var(--radius);
+            padding: 32px 28px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            border: 1px solid transparent;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--gold);
+            background: var(--white);
+        }
+
+        .resource-card .res-icon {
+            font-size: 2.6rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+        }
+
+        .resource-card h4 {
+            font-size: 1.1rem;
+            color: var(--deep-blue);
+            margin-bottom: 6px;
+        }
+
+        .resource-card p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .resource-card .res-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--gold);
+            transition: var(--transition);
+        }
+
+        .resource-card .res-link:hover {
+            color: var(--deep-blue);
+            gap: 14px;
+        }
+
+        /* ============================================================
+           NEWSLETTER
+        ============================================================ */
+        .subscribe {
+            background: var(--deep-blue);
+            padding: 60px 0;
+            color: var(--white);
+        }
+
+        .subscribe-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .subscribe-grid .sub-content h2 {
+            font-size: 1.8rem;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .subscribe-grid .sub-content h2 span {
+            color: var(--gold);
+        }
+
+        .subscribe-grid .sub-content p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1rem;
+        }
+
+        .subscribe-grid .sub-form {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .subscribe-grid .sub-form input[type="email"] {
+            flex: 1;
+            min-width: 200px;
+            padding: 14px 20px;
+            border-radius: 50px;
+            border: none;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            background: rgba(255, 255, 255, 0.12);
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: var(--transition);
+        }
+
+        .subscribe-grid .sub-form input[type="email"]::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .subscribe-grid .sub-form input[type="email"]:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            border-color: var(--gold);
+        }
+
+        .subscribe-grid .sub-form .btn {
+            flex-shrink: 0;
+        }
+
+        /* ============================================================
+           SOCIAL
+        ============================================================ */
+        .social-feed {
+            background: var(--light-gray);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .social-feed h2 {
+            font-size: 1.6rem;
+            color: var(--deep-blue);
+            margin-bottom: 8px;
+        }
+
+        .social-feed h2 span {
+            color: var(--gold);
+        }
+
+        .social-feed p {
+            color: var(--text-muted);
+            margin-bottom: 28px;
+        }
+
+        .social-icons-large {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-icons-large a {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--white);
+            transition: var(--transition);
+            background: var(--deep-blue);
+        }
+
+        .social-icons-large a:hover {
+            transform: translateY(-6px) scale(1.05);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .social-icons-large a.linkedin {
+            background: #0077b5;
+        }
+        .social-icons-large a.twitter {
+            background: #1da1f2;
+        }
+        .social-icons-large a.facebook {
+            background: #1877f2;
+        }
+        .social-icons-large a.youtube {
+            background: #ff0000;
+        }
+        .social-icons-large a.instagram {
+            background: #e4405f;
+        }
+
+        /* ============================================================
+           FOOTER
+        ============================================================ */
+        .footer {
+            background: var(--deep-blue);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .footer-brand .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: var(--white);
+            margin-bottom: 14px;
+        }
+
+        .footer-brand .logo .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--deep-blue);
+            font-weight: 900;
+        }
+
+        .footer-brand p {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            max-width: 300px;
+        }
+
+        .footer h4 {
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer ul li a:hover {
+            color: var(--gold);
+        }
+
+        .footer .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 6px;
+        }
+
+        .footer .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer .social-links a:hover {
+            background: var(--gold);
+            color: var(--deep-blue);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding-top: 28px;
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom a {
+            color: rgba(255, 255, 255, 0.5);
+            transition: var(--transition);
+        }
+
+        .footer-bottom a:hover {
+            color: var(--gold);
+        }
+
+        /* ============================================================
+           RESPONSIVE
+        ============================================================ */
+        @media (max-width: 1024px) {
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .resources-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .page-hero .container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .page-hero {
+                min-height: auto;
+                padding: calc(var(--nav-height) + 40px) 0 50px;
+            }
+            .page-hero .hero-content {
+                max-width: 100%;
+            }
+            .page-hero p {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .subscribe-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+            .subscribe-grid .sub-form {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --nav-height: 64px;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: var(--nav-height);
+                left: 0;
+                right: 0;
+                background: rgba(0, 7, 45, 0.98);
+                backdrop-filter: blur(12px);
+                flex-direction: column;
+                padding: 24px 28px 32px;
+                gap: 4px;
+                transform: translateY(-120%);
+                transition: var(--transition);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                max-height: calc(100vh - var(--nav-height));
+                overflow-y: auto;
+            }
+
+            .nav-links.open {
+                transform: translateY(0);
+            }
+
+            .nav-links a {
+                font-size: 1rem;
+                padding: 12px 16px;
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .nav-links a.active::after {
+                display: none;
+            }
+
+            .nav-links a.active {
+                background: rgba(10, 110, 211, 0.15);
+                color: var(--gold);
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-actions .search-btn,
+            .nav-actions .lang-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 0.9rem;
+            }
+
+            .page-hero {
+                padding: calc(var(--nav-height) + 28px) 0 36px;
+            }
+            .page-hero h1 {
+                font-size: 2.2rem;
+            }
+            .page-hero .hero-cta {
+                flex-direction: column;
+            }
+            .page-hero .hero-cta .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-featured-teaser {
+                padding: 20px 22px 24px;
+            }
+            .hero-featured-teaser h3 {
+                font-size: 1rem;
+            }
+
+            .news-filters {
+                position: relative;
+                top: 0;
+                padding: 14px 0;
+            }
+            .news-filters .filter-wrap {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+            .news-filters .filter-left {
+                flex-wrap: wrap;
+            }
+            .news-filters .filter-btn {
+                padding: 6px 14px;
+                font-size: 0.7rem;
+            }
+            .news-filters .filter-right {
+                text-align: center;
+                font-size: 0.8rem;
+            }
+
+            .news-section {
+                padding: 30px 0 30px;
+            }
+
+            .news-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .media-resources {
+                padding: 40px 0 60px;
+            }
+
+            .resources-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .subscribe-grid .sub-form {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .subscribe-grid .sub-form input[type="email"] {
+                width: 100%;
+            }
+            .subscribe-grid .sub-form .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .social-icons-large a {
+                width: 52px;
+                height: 52px;
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-logo {
+                font-size: 1rem;
+            }
+            .nav-logo .logo-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 1.1rem;
+            }
+
+            .page-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .news-card .card-image {
+                height: 160px;
+                font-size: 2.2rem;
+            }
+            .news-card .card-body {
+                padding: 18px 20px 22px;
+            }
+            .news-card .card-body h3 {
+                font-size: 1rem;
+            }
+
+            .social-icons-large a {
+                width: 44px;
+                height: 44px;
+                font-size: 1.2rem;
+            }
+            .social-icons-large {
+                gap: 14px;
+            }
+
+            .news-section {
+                padding: 20px 0 20px;
+            }
+
+            .media-resources {
+                padding: 30px 0 50px;
+            }
+        }
+
+        /* ============================================================
+           ANIMATIONS
+        ============================================================ */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================================
+           SCROLLBAR
+        ============================================================ */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--light-gray);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--deep-blue);
+            border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold);
+        }
+
+        /* ============================================================
+           UTILITY
+        ============================================================ */
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="index.html" class="nav-logo" aria-label="Nile Petroleum Corporation Home">
+                <span class="logo-icon">N</span>
+                Nile<span>Pet</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" role="menuitem">About Us</a></li>
+                <li role="none"><a href="business.html" role="menuitem">Our Business</a></li>
+                <li role="none"><a href="operations.html" role="menuitem">Operations</a></li>
+                <li role="none"><a href="news.html" role="menuitem" class="active">News &amp; Media</a></li>
+                <li role="none"><a href="careers.html" role="menuitem">Careers</a></li>
+                <li role="none"><a href="tenders.html" role="menuitem">Tenders</a></li>
+                <li role="none"><a href="index.html#contact" role="menuitem">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="search-btn" aria-label="Search" title="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="lang-btn" aria-label="Toggle language" title="Language">
+                    EN
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    PAGE HERO
+    ============================================================ -->
+    <section class="page-hero" id="hero">
+        <div class="page-hero-bg" aria-hidden="true"></div>
+        <div class="page-hero-overlay" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                     News &amp; Media
+                </div>
+                <h1>
+                    Latest Updates
+                </h1>
+                <p>
+                    Stay informed with the latest news, press releases, and insights from
+                    Nile Petroleum Corporation â€“ powering South Sudan&rsquo;s energy future.
+                </p>
+                <div class="hero-cta">
+                    <a href="#news-grid" class="btn btn-primary">
+                        <i class="fas fa-arrow-down"></i> Browse All News
+                    </a>
+                    <a href="#resources" class="btn btn-secondary-hero">
+                        <i class="fas fa-download"></i> Media Resources
+                    </a>
+                </div>
+            </div>
+
+            <!-- Featured Story Teaser -->
+            <div class="hero-featured-teaser">
+                <span class="teaser-label"><i class="fas fa-star"></i> Featured</span>
+                <div class="teaser-category">Press Release &middot; July 15, 2026</div>
+                <h3>Nilepet Announces Major Exploration Discovery in Jonglei</h3>
+                <p>
+                    Nile Petroleum Corporation has announced a significant oil discovery in the
+                    Jonglei Basin, with estimated reserves of over 500 million barrels.
+                </p>
+                <a href="#" class="teaser-link">
+                    Read Full Story <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    NEWS FILTERS
+    ============================================================ -->
+    <section class="news-filters" id="filters">
+        <div class="container">
+            <div class="filter-wrap">
+                <div class="filter-left">
+                    <span class="filter-label"><i class="fas fa-filter"></i> Filter:</span>
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="press-release">Press Releases</button>
+                    <button class="filter-btn" data-filter="industry">Industry</button>
+                    <button class="filter-btn" data-filter="community">Community</button>
+                    <button class="filter-btn" data-filter="operations">Operations</button>
+                </div>
+                <div class="filter-right">
+                    Showing <strong id="countDisplay">9</strong> articles
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    NEWS GRID
+    ============================================================ -->
+    <section class="news-section" id="news-grid">
+        <div class="container">
+            <div class="news-grid" id="newsContainer">
+                <!-- News cards populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    MEDIA RESOURCES
+    ============================================================ -->
+    <section class="media-resources" id="resources">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label"></i> Resources</span>
+                <h2 class="section-title">Media Resources</h2>
+                <p class="section-sub">
+                    Access our publications, reports, and media assets for journalists and stakeholders.
+                </p>
+            </div>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="res-icon"><i class="fas fa-file-pdf"></i></div>
+                    <h4>PetroQuest Magazine</h4>
+                    <p>
+                        Our quarterly publication featuring in-depth articles on South Sudan&rsquo;s
+                        energy sector, industry insights, and company highlights.
+                    </p>
+                    <a href="#" class="res-link">
+                        Download Latest Issue <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="resource-card">
+                    <div class="res-icon"><i class="fas fa-file-alt"></i></div>
+                    <h4>Annual Reports</h4>
+                    <p>
+                        Comprehensive reports detailing Nilepet&rsquo;s financial performance,
+                        operational achievements, and sustainability commitments.
+                    </p>
+                    <a href="#" class="res-link">
+                        View Reports <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="resource-card">
+                    <div class="res-icon"><i class="fas fa-images"></i></div>
+                    <h4>Press Kit &amp; Media Assets</h4>
+                    <p>
+                        Logos, brand guidelines, high-resolution images, and b-roll footage
+                        for media professionals and partners.
+                    </p>
+                    <a href="#" class="res-link">
+                        Download Press Kit <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    NEWSLETTER SUBSCRIBE
+    ============================================================ -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe-grid">
+                <div class="sub-content">
+                    <h2>Subscribe to Nilepet News</h2>
+                    <p>
+                        Get the latest updates, press releases, and industry insights delivered
+                        straight to your inbox.
+                    </p>
+                </div>
+                <form class="sub-form" id="subscribeForm">
+                    <input type="email" id="subscriberEmail" name="email" placeholder="Enter your email address" required />
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SOCIAL FEED
+    ============================================================ -->
+    <section class="social-feed">
+        <div class="container">
+            <h2>Connect With Us</h2>
+            <p>Follow Nilepet on social media for real-time updates and behind-the-scenes content.</p>
+            <div class="social-icons-large">
+                <a href="#" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">N</span>
+                        Nile<span>Pet</span>
+                    </div>
+                    <p>
+                        South Sudan&rsquo;s National Oil Company, mandated to manage and develop
+                        the nation&rsquo;s petroleum resources for the benefit of all.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="business.html">Our Business</a></li>
+                        <li><a href="news.html">News &amp; Media</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Operations</h4>
+                    <ul>
+                        <li><a href="operations.html">Upstream</a></li>
+                        <li><a href="operations.html">Downstream</a></li>
+                        <li><a href="operations.html">Gas</a></li>
+                        <li><a href="operations.html">Joint Ventures</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="tenders.html">Tenders</a></li>
+                        <li><a href="news.html">PetroQuest Magazine</a></li>
+                        <li><a href="news.html">Annual Reports</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Nile Petroleum Corporation. All rights reserved.</span>
+                <span>
+                    <a href="#">Privacy Policy</a> &middot;
+                    <a href="#">Terms of Use</a> &middot;
+                    <a href="#">Accessibility</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // ---- Mobile Menu ----
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburger.addEventListener('click', function() {
+                const expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                this.setAttribute('aria-expanded', expanded);
+                this.classList.toggle('active');
+                navLinks.classList.toggle('open');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    navLinks.classList.remove('open');
+                });
+            });
+
+            // ---- Sticky Navbar ----
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                if (currentScroll > 60) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // ---- Search ----
+            document.querySelector('.search-btn').addEventListener('click', function() {
+                alert('ðŸ” Search functionality coming soon.');
+            });
+
+            // ---- Language toggle ----
+            const langBtn = document.querySelector('.lang-btn');
+            let lang = 'EN';
+            langBtn.addEventListener('click', function() {
+                lang = lang === 'EN' ? 'AR' : 'EN';
+                this.textContent = lang;
+            });
+
+            // ============================================================
+            //  NEWS DATA & FILTERING
+            // ============================================================
+            const newsData = [{
+                id: 1,
+                title: 'Nilepet Announces New Exploration Block in Jonglei',
+                date: 'June 15, 2026',
+                category: 'operations',
+                categoryLabel: 'Operations',
+                summary: 'South Sudan\'s national oil company expands upstream portfolio with a new 5,000 kmÂ² exploration license in the Jonglei Basin.',
+                image: 'ðŸ›¢ï¸',
+                bg: 'linear-gradient(135deg, #00072D 0%, #0A6ED3 100%)'
+            }, {
+                id: 2,
+                title: 'New Refinery Project to Boost Domestic Fuel Supply',
+                date: 'May 28, 2026',
+                category: 'operations',
+                categoryLabel: 'Operations',
+                summary: 'Construction begins on a 50,000 bpd refinery near Juba, set to reduce fuel imports by 40% and enhance energy security.',
+                image: 'ðŸ—ï¸',
+                bg: 'linear-gradient(135deg, #0A6ED3 0%, #0A6ED3 100%)'
+            }, {
+                id: 3,
+                title: 'Nilepet Partners with International Energy Firms',
+                date: 'May 10, 2026',
+                category: 'industry',
+                categoryLabel: 'Industry',
+                summary: 'New joint venture agreements signed with global energy leaders to accelerate technology transfer and capacity building.',
+                image: 'ðŸŒ',
+                bg: 'linear-gradient(135deg, #0A6ED3 0%, #0A6ED3 100%)'
+            }, {
+                id: 4,
+                title: 'Nilepet Invests in Local Community Development',
+                date: 'April 22, 2026',
+                category: 'community',
+                categoryLabel: 'Community',
+                summary: 'Nilepet launches a $5 million community development fund to support education, healthcare, and infrastructure in oil-producing regions.',
+                image: 'ðŸ«',
+                bg: 'linear-gradient(135deg, #00072D 0%, #000000 100%)'
+            }, {
+                id: 5,
+                title: 'Nilepet Reports Strong Q2 Production Growth',
+                date: 'April 5, 2026',
+                category: 'press-release',
+                categoryLabel: 'Press Release',
+                summary: 'Nilepet announces a 12% increase in production compared to the previous quarter, driven by operational efficiency improvements.',
+                image: 'ðŸ“Š',
+                bg: 'linear-gradient(135deg, #1a2a3a 0%, #2d3748 100%)'
+            }, {
+                id: 6,
+                title: 'South Sudan Energy Summit 2026: Nilepet Leads Dialogue',
+                date: 'March 18, 2026',
+                category: 'industry',
+                categoryLabel: 'Industry',
+                summary: 'Nilepet hosts the South Sudan Energy Summit, bringing together industry leaders to discuss the future of energy in the region.',
+                image: 'ðŸŽ¤',
+                bg: 'linear-gradient(135deg, #2d3748 0%, #4a5568 100%)'
+            }, {
+                id: 7,
+                title: 'Nilepet Launches New Retail Station in Torit',
+                date: 'March 2, 2026',
+                category: 'operations',
+                categoryLabel: 'Operations',
+                summary: 'Nilepet opens its 45th retail station in Torit, expanding its network and bringing quality fuel products closer to communities.',
+                image: 'â›½',
+                bg: 'linear-gradient(135deg, #00072D 0%, #0A6ED3 100%)'
+            }, {
+                id: 8,
+                title: 'Nilepet Appoints New Chief Operating Officer',
+                date: 'February 14, 2026',
+                category: 'press-release',
+                categoryLabel: 'Press Release',
+                summary: 'Nilepet announces the appointment of Eng. Sarah Nyandeng as Chief Operating Officer, bringing 18 years of industry experience.',
+                image: 'ðŸ‘¤',
+                bg: 'linear-gradient(135deg, #0A6ED3 0%, #0A6ED3 100%)'
+            }, {
+                id: 9,
+                title: 'Environmental Impact Assessment Completed for New Block',
+                date: 'January 28, 2026',
+                category: 'community',
+                categoryLabel: 'Community',
+                summary: 'Nilepet completes comprehensive environmental impact assessments for its new exploration block, demonstrating commitment to sustainability.',
+                image: 'ðŸŒ¿',
+                bg: 'linear-gradient(135deg, #0A6ED3 0%, #000000 100%)'
+            }];
+
+            const newsContainer = document.getElementById('newsContainer');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const countDisplay = document.getElementById('countDisplay');
+
+            function renderNews(category) {
+                const filtered = category === 'all' ?
+                    newsData :
+                    newsData.filter(item => item.category === category);
+
+                countDisplay.textContent = filtered.length;
+
+                if (filtered.length === 0) {
+                    newsContainer.innerHTML = `
+                            <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-muted);">
+                                <i class="fas fa-inbox" style="font-size: 2.5rem; color: var(--medium-gray); margin-bottom: 12px; display: block;"></i>
+                                <h4 style="font-size: 1.2rem; color: var(--text-dark);">No news found</h4>
+                                <p>Try selecting a different category.</p>
+                            </div>
+                        `;
+                    return;
+                }
+
+                newsContainer.innerHTML = filtered.map(item => `
+                        <article class="news-card">
+                            <div class="card-image" style="background: ${item.bg};">
+                                <span style="opacity:0.5; font-size:3.5rem;">${item.image}</span>
+                                <span class="category-badge">${item.categoryLabel}</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="date">${item.date}</span>
+                                <h3>${item.title}</h3>
+                                <p>${item.summary}</p>
+                                <a href="#" class="read-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    `).join('');
+            }
+
+            // Filter button click handlers
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    const filter = this.dataset.filter;
+                    renderNews(filter);
+                });
+            });
+
+            // Initial render
+            renderNews('all');
+
+            // ---- Smooth scroll for "Browse All News" button ----
+            document.querySelector('.hero-cta .btn-primary').addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector('#news-grid');
+                if (target) {
+                    const offsetTop = target.getBoundingClientRect().top + window.pageYOffset -
+                        parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) -
+                        20;
+                    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                }
+            });
+
+            const subscribeForm = document.getElementById('subscribeForm');
+            if (subscribeForm) {
+                subscribeForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const emailInput = document.getElementById('subscriberEmail');
+                    const submitButton = subscribeForm.querySelector('button[type="submit"]');
+                    const originalText = submitButton.innerHTML;
+                    submitButton.disabled = true;
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Subscribing...';
+
+                    const formData = new FormData();
+                    formData.append('email', emailInput.value.trim());
+
+                    fetch('php/subscribe.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(result => {
+                        if (!result.success) {
+                            throw new Error(result.message || 'Subscription failed.');
+                        }
+                        alert('✅ Thank you for subscribing! You will receive our latest news updates.');
+                        subscribeForm.reset();
+                    })
+                    .catch(error => {
+                        alert(error.message || 'Unable to subscribe right now. Please try again later.');
+                    })
+                    .finally(() => {
+                        submitButton.disabled = false;
+                        submitButton.innerHTML = originalText;
+                    });
+                });
+            }
+
+        });
+    </script>
+
+</body>
+</html>
