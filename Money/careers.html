@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers â€“ Nile Petroleum Corporation</title>
+    <meta name="description" content="Explore career opportunities at Nile Petroleum Corporation. Join South Sudan's National Oil Company and power the nation's energy future." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --deep-blue: #00072D;
+            --green: #000000;
+            --gold: #0A6ED3;
+            --white: #ffffff;
+            --light-gray: #f5f7fa;
+            --medium-gray: #e8ecf1;
+            --text-dark: #000000;
+            --text-muted: #1f1f1f;
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --radius: 12px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            --nav-height: 76px;
+        }
+
+        /* ===== Reset & Base ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== Typography ===== */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            background: rgba(10, 110, 211, 0.12);
+            padding: 4px 16px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--deep-blue);
+            margin-bottom: 16px;
+        }
+
+        .section-title span {
+            color: var(--gold);
+        }
+
+        .section-sub {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 640px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 14px 34px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--deep-blue);
+            box-shadow: 0 4px 16px rgba(10, 110, 211, 0.35);
+        }
+        .btn-primary:hover {
+            background: #0A6ED3;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(10, 110, 211, 0.45);
+        }
+
+        .btn-outline-blue {
+            background: transparent;
+            color: var(--deep-blue);
+            border: 2px solid var(--deep-blue);
+        }
+        .btn-outline-blue:hover {
+            background: var(--deep-blue);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--deep-blue);
+        }
+        .btn-white:hover {
+            background: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary-hero {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(4px);
+        }
+        .btn-secondary-hero:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: var(--nav-height);
+            background: rgba(0, 7, 45, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            background: rgba(0, 7, 45, 0.98);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--white);
+            flex-shrink: 0;
+        }
+
+        .nav-logo .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--deep-blue);
+            font-size: 1.4rem;
+            font-weight: 900;
+            flex-shrink: 0;
+        }
+
+        .nav-logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: var(--transition);
+            letter-spacing: 0.2px;
+            position: relative;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--white);
+            background: rgba(10, 110, 211, 0.15);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 4px;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .nav-actions .search-btn,
+        .nav-actions .lang-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: none;
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-actions .search-btn:hover,
+        .nav-actions .lang-btn:hover {
+            background: rgba(10, 110, 211, 0.2);
+            color: var(--gold);
+        }
+
+        .lang-btn {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.7rem !important;
+            letter-spacing: 0.5px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--white);
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ============================================================
+           PAGE HERO
+        ============================================================ */
+        .page-hero {
+            padding: calc(var(--nav-height) + 60px) 0 70px;
+            background: var(--deep-blue);
+            position: relative;
+            overflow: hidden;
+            min-height: 420px;
+        }
+
+        .page-hero-bg {
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80') center/cover no-repeat;
+            opacity: 0.10;
+            transform: scale(1.05);
+        }
+
+        .page-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(0, 7, 45, 0.4) 0%, rgba(0, 7, 45, 0.9) 70%, #00072D 100%);
+        }
+
+        .page-hero .container {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .page-hero .hero-content {
+            max-width: 600px;
+        }
+
+        .page-hero .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(10, 110, 211, 0.15);
+            border: 1px solid rgba(10, 110, 211, 0.2);
+            padding: 6px 18px 6px 12px;
+            border-radius: 50px;
+            color: var(--gold);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(4px);
+        }
+
+        .page-hero h1 {
+            font-size: clamp(2.6rem, 5vw, 4rem);
+            font-weight: 900;
+            color: var(--white);
+            line-height: 1.08;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-hero h1 .highlight {
+            color: var(--gold);
+        }
+
+        .page-hero p {
+            font-size: clamp(1rem, 1.3vw, 1.2rem);
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 480px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .page-hero .hero-cta {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stats-mini {
+            display: flex;
+            gap: 32px;
+            margin-top: 30px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .hero-stats-mini .stat-item .stat-number {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--gold);
+            line-height: 1;
+            display: block;
+        }
+
+        .hero-stats-mini .stat-item .stat-label {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ============================================================
+           WHY WORK AT NILEPET
+        ============================================================ */
+        .why-work {
+            background: var(--white);
+            padding: 80px 0;
+        }
+
+        .why-work .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .why-work .section-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+        }
+
+        .benefit-card {
+            background: var(--light-gray);
+            border-radius: var(--radius);
+            padding: 32px 24px;
+            text-align: center;
+            transition: var(--transition);
+            border-bottom: 4px solid transparent;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-bottom-color: var(--gold);
+            background: var(--white);
+        }
+
+        .benefit-card .benefit-icon {
+            font-size: 2.6rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.1rem;
+            color: var(--deep-blue);
+            margin-bottom: 8px;
+        }
+
+        .benefit-card p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* ============================================================
+           CURRENT OPENINGS
+        ============================================================ */
+        .openings {
+            background: var(--light-gray);
+            padding: 80px 0;
+        }
+
+        .openings .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .openings .section-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .openings-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .openings-filters .filter-btn {
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.8rem;
+            border: 1.5px solid var(--medium-gray);
+            background: var(--white);
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .openings-filters .filter-btn:hover {
+            border-color: var(--gold);
+            color: var(--deep-blue);
+        }
+
+        .openings-filters .filter-btn.active {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--deep-blue);
+        }
+
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+        }
+
+        .job-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 28px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 4px solid var(--gold);
+        }
+
+        .job-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .job-card .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .job-card .job-header h3 {
+            font-size: 1.15rem;
+            color: var(--deep-blue);
+        }
+
+        .job-card .job-badge {
+            font-size: 0.65rem;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 4px 14px;
+            border-radius: 50px;
+            background: rgba(0, 150, 57, 0.12);
+            color: var(--green);
+            border: 1px solid rgba(0, 150, 57, 0.2);
+        }
+
+        .job-card .job-badge.closing {
+            background: rgba(10, 110, 211, 0.15);
+            color: #b7791f;
+            border-color: rgba(10, 110, 211, 0.2);
+        }
+
+        .job-card .job-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin: 10px 0 14px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .job-card .job-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .job-card .job-meta i {
+            color: var(--gold);
+            width: 16px;
+        }
+
+        .job-card p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .job-card .job-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .job-card .job-actions .btn-sm {
+            padding: 8px 20px;
+            font-size: 0.8rem;
+            border-radius: 50px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            background: var(--light-gray);
+            color: var(--text-muted);
+        }
+
+        .job-card .job-actions .btn-sm:hover {
+            background: var(--deep-blue);
+            color: var(--white);
+        }
+
+        .job-card .job-actions .btn-sm.apply-btn {
+            background: var(--gold);
+            color: var(--deep-blue);
+        }
+
+        .job-card .job-actions .btn-sm.apply-btn:hover {
+            background: #0A6ED3;
+            transform: translateY(-2px);
+        }
+
+        /* ============================================================
+           APPLICATION PROCESS
+        ============================================================ */
+        .process {
+            background: var(--white);
+            padding: 80px 0;
+        }
+
+        .process .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .process .section-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+            position: relative;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .process-step .step-number {
+            width: 56px;
+            height: 56px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-weight: 900;
+            font-size: 1.4rem;
+            color: var(--deep-blue);
+            margin: 0 auto 16px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .process-step .step-connector {
+            position: absolute;
+            top: 28px;
+            left: calc(50% + 28px);
+            right: calc(-50% + 28px);
+            height: 3px;
+            background: var(--medium-gray);
+            z-index: 1;
+        }
+
+        .process-step:last-child .step-connector {
+            display: none;
+        }
+
+        .process-step h4 {
+            font-size: 1.05rem;
+            color: var(--deep-blue);
+            margin-bottom: 6px;
+        }
+
+        .process-step p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ============================================================
+           CTA SECTION
+        ============================================================ */
+        .cta-section {
+            background: var(--deep-blue);
+            padding: 60px 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .cta-section h2 span {
+            color: var(--gold);
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.05rem;
+            max-width: 500px;
+            margin: 0 auto 28px;
+        }
+
+        .cta-section .btn-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ============================================================
+           FOOTER
+        ============================================================ */
+        .footer {
+            background: var(--deep-blue);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .footer-brand .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: var(--white);
+            margin-bottom: 14px;
+        }
+
+        .footer-brand .logo .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--deep-blue);
+            font-weight: 900;
+        }
+
+        .footer-brand p {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            max-width: 300px;
+        }
+
+        .footer h4 {
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer ul li a:hover {
+            color: var(--gold);
+        }
+
+        .footer .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 6px;
+        }
+
+        .footer .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer .social-links a:hover {
+            background: var(--gold);
+            color: var(--deep-blue);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding-top: 28px;
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom a {
+            color: rgba(255, 255, 255, 0.5);
+            transition: var(--transition);
+        }
+
+        .footer-bottom a:hover {
+            color: var(--gold);
+        }
+
+        /* ============================================================
+           MODAL
+        ============================================================ */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(6px);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            overflow-y: auto;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            max-width: 720px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+            padding: 48px 44px 40px;
+            position: relative;
+            animation: slideUp 0.4s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-card .close-modal {
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+            line-height: 1;
+            padding: 4px 8px;
+            border-radius: 8px;
+        }
+
+        .modal-card .close-modal:hover {
+            color: var(--deep-blue);
+            background: rgba(0, 7, 45, 0.06);
+            transform: rotate(90deg);
+        }
+
+        .modal-card .modal-header {
+            margin-bottom: 28px;
+            padding-right: 32px;
+        }
+
+        .modal-card .modal-header h2 {
+            font-size: 1.8rem;
+            color: var(--deep-blue);
+        }
+
+        .modal-card .modal-header h2 span {
+            color: var(--gold);
+        }
+
+        .modal-card .modal-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        .form-group label {
+            display: block;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--deep-blue);
+            margin-bottom: 6px;
+        }
+
+        .form-group label .required {
+            color: #e53e3e;
+            margin-left: 2px;
+        }
+
+        .form-group .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1.5px solid var(--medium-gray);
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            transition: var(--transition);
+            background: var(--white);
+            color: var(--text-dark);
+        }
+
+        .form-group .form-control:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(10, 110, 211, 0.2);
+        }
+
+        .form-group .form-control.error {
+            border-color: #e53e3e;
+        }
+
+        .form-group .error-message {
+            font-size: 0.8rem;
+            color: #e53e3e;
+            margin-top: 4px;
+            display: none;
+        }
+
+        .form-group .error-message.show {
+            display: block;
+        }
+
+        .file-upload-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .file-upload-wrapper input[type="file"] {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .file-upload-wrapper .file-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--light-gray);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border: 1.5px dashed var(--medium-gray);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            min-height: 48px;
+        }
+
+        .file-upload-wrapper .file-label:hover {
+            border-color: var(--gold);
+            background: rgba(10, 110, 211, 0.05);
+        }
+
+        .file-upload-wrapper .file-name {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 200px;
+        }
+
+        .form-hint {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .form-actions .btn {
+            flex: 1;
+            justify-content: center;
+            min-width: 140px;
+        }
+
+        .form-actions .btn-outline {
+            background: transparent;
+            border: 2px solid var(--medium-gray);
+            color: var(--text-muted);
+        }
+
+        .form-actions .btn-outline:hover {
+            border-color: var(--deep-blue);
+            color: var(--deep-blue);
+            background: rgba(0, 7, 45, 0.04);
+        }
+
+        /* ============================================================
+           RESPONSIVE
+        ============================================================ */
+        @media (max-width: 1024px) {
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .process-step .step-connector {
+                display: none;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .page-hero .container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .page-hero {
+                min-height: auto;
+                padding: calc(var(--nav-height) + 40px) 0 50px;
+            }
+            .page-hero .hero-content {
+                max-width: 100%;
+            }
+            .page-hero p {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .jobs-grid {
+                grid-template-columns: 1fr;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --nav-height: 64px;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: var(--nav-height);
+                left: 0;
+                right: 0;
+                background: rgba(0, 7, 45, 0.98);
+                backdrop-filter: blur(12px);
+                flex-direction: column;
+                padding: 24px 28px 32px;
+                gap: 4px;
+                transform: translateY(-120%);
+                transition: var(--transition);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                max-height: calc(100vh - var(--nav-height));
+                overflow-y: auto;
+            }
+
+            .nav-links.open {
+                transform: translateY(0);
+            }
+
+            .nav-links a {
+                font-size: 1rem;
+                padding: 12px 16px;
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .nav-links a.active::after {
+                display: none;
+            }
+
+            .nav-links a.active {
+                background: rgba(10, 110, 211, 0.15);
+                color: var(--gold);
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-actions .search-btn,
+            .nav-actions .lang-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 0.9rem;
+            }
+
+            .page-hero {
+                padding: calc(var(--nav-height) + 28px) 0 36px;
+            }
+            .page-hero h1 {
+                font-size: 2.2rem;
+            }
+            .page-hero .hero-cta {
+                flex-direction: column;
+            }
+            .page-hero .hero-cta .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .hero-stats-mini {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+            .hero-stats-mini .stat-item .stat-number {
+                font-size: 1.4rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+                max-width: 350px;
+                margin: 0 auto;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .modal-card {
+                padding: 32px 20px 28px;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            .form-actions {
+                flex-direction: column;
+            }
+            .form-actions .btn {
+                width: 100%;
+            }
+            .file-upload-wrapper .file-name {
+                max-width: 120px;
+            }
+
+            .job-card .job-header {
+                flex-direction: column;
+            }
+            .job-card .job-actions {
+                width: 100%;
+            }
+            .job-card .job-actions .btn-sm {
+                flex: 1;
+                justify-content: center;
+            }
+
+            .openings-filters {
+                gap: 8px;
+            }
+            .openings-filters .filter-btn {
+                padding: 6px 14px;
+                font-size: 0.7rem;
+            }
+
+            .cta-section h2 {
+                font-size: 1.6rem;
+            }
+            .cta-section .btn-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cta-section .btn-group .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-logo {
+                font-size: 1rem;
+            }
+            .nav-logo .logo-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 1.1rem;
+            }
+
+            .page-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .job-card {
+                padding: 20px 18px;
+            }
+            .job-card .job-meta {
+                font-size: 0.8rem;
+                gap: 10px;
+            }
+
+            .benefit-card {
+                padding: 24px 16px;
+            }
+
+            .process-step .step-number {
+                width: 44px;
+                height: 44px;
+                font-size: 1.1rem;
+            }
+        }
+
+        /* ============================================================
+           ANIMATIONS
+        ============================================================ */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================================
+           SCROLLBAR
+        ============================================================ */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--light-gray);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--deep-blue);
+            border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="index.html" class="nav-logo" aria-label="Nile Petroleum Corporation Home">
+                <span class="logo-icon">N</span>
+                Nile<span>Pet</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" role="menuitem">About Us</a></li>
+                <li role="none"><a href="business.html" role="menuitem">Our Business</a></li>
+                <li role="none"><a href="operations.html" role="menuitem">Operations</a></li>
+                <li role="none"><a href="news.html" role="menuitem">News &amp; Media</a></li>
+                <li role="none"><a href="careers.html" role="menuitem" class="active">Careers</a></li>
+                <li role="none"><a href="tenders.html" role="menuitem">Tenders</a></li>
+                <li role="none"><a href="index.html#contact" role="menuitem">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="search-btn" aria-label="Search" title="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="lang-btn" aria-label="Toggle language" title="Language">
+                    EN
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    PAGE HERO
+    ============================================================ -->
+    <section class="page-hero" id="hero">
+        <div class="page-hero-bg" aria-hidden="true"></div>
+        <div class="page-hero-overlay" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                  </i> Careers
+                </div>
+                <h1>
+                    Join Our Team
+                </h1>
+                <p>
+                    Be part of South Sudan&rsquo;s energy future. We seek talented professionals
+                    to drive innovation, excellence, and national development.
+                </p>
+                <div class="hero-cta">
+                    <a href="#openings" class="btn btn-primary">
+                        <i class="fas fa-arrow-down"></i> View Openings
+                    </a>
+                    <a href="#process" class="btn btn-secondary-hero">
+                        <i class="fas fa-info-circle"></i> Application Process
+                    </a>
+                </div>
+                <div class="hero-stats-mini">
+                    <div class="stat-item">
+                        <span class="stat-number">2000+</span>
+                        <span class="stat-label">Employees</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Nationalities</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Local Content</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    WHY WORK AT NILEPET
+    ============================================================ -->
+    <section class="why-work">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label"> Why Nilepet</span>
+                <h2 class="section-title">Why Work With Us</h2>
+                <p class="section-sub">
+                    At Nilepet, we offer more than just a job â€“ we offer a career with purpose,
+                    growth, and the opportunity to shape South Sudan&rsquo;s energy future.
+                </p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-up">
+                    <div class="benefit-icon"><i class="fas fa-rocket"></i></div>
+                    <h4>Career Growth</h4>
+                    <p>
+                        Continuous learning, professional development, and clear career
+                        progression paths across our operations.
+                    </p>
+                </div>
+                <div class="benefit-card fade-up">
+                    <div class="benefit-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h4>Meaningful Impact</h4>
+                    <p>
+                        Contribute directly to South Sudan&rsquo;s economic development and
+                        energy security through your work.
+                    </p>
+                </div>
+                <div class="benefit-card fade-up">
+                    <div class="benefit-icon"><i class="fas fa-globe-africa"></i></div>
+                    <h4>Diverse Culture</h4>
+                    <p>
+                        Work alongside talented professionals from diverse backgrounds
+                        in a collaborative and inclusive environment.
+                    </p>
+                </div>
+                <div class="benefit-card fade-up">
+                    <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Safety &amp; Wellbeing</h4>
+                    <p>
+                        We prioritize the health, safety, and wellbeing of our employees
+                        with world-class standards and support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CURRENT OPENINGS
+    ============================================================ -->
+    <section class="openings" id="openings">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label">Opportunities</span>
+                <h2 class="section-title">Current Openings</h2>
+                <p class="section-sub">
+                    Explore our latest job opportunities across South Sudan. Join us in
+                    powering the nation&rsquo;s energy future.
+                </p>
+            </div>
+
+            <div class="openings-filters" id="jobFilters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="engineering">Engineering</button>
+                <button class="filter-btn" data-filter="operations">Operations</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="it">IT &amp; Technology</button>
+            </div>
+
+            <div class="jobs-grid" id="jobsContainer">
+                <!-- Jobs populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    APPLICATION PROCESS
+    ============================================================ -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label">How to Apply</span>
+                <h2 class="section-title">Application Process</h2>
+                <p class="section-sub">
+                    Our hiring process is designed to be transparent, efficient, and
+                    focused on finding the best talent for our team.
+                </p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step fade-up">
+                    <div class="step-number">1</div>
+                    <span class="step-connector"></span>
+                    <h4>Submit Application</h4>
+                    <p>
+                        Complete the online application form and upload your CV and
+                        supporting documents.
+                    </p>
+                </div>
+                <div class="process-step fade-up">
+                    <div class="step-number">2</div>
+                    <span class="step-connector"></span>
+                    <h4>Screening &amp; Review</h4>
+                    <p>
+                        Our HR team reviews applications and shortlists qualified
+                        candidates based on experience and skills.
+                    </p>
+                </div>
+                <div class="process-step fade-up">
+                    <div class="step-number">3</div>
+                    <span class="step-connector"></span>
+                    <h4>Interviews &amp; Assessment</h4>
+                    <p>
+                        Selected candidates participate in interviews and technical
+                        assessments with our hiring managers.
+                    </p>
+                </div>
+                <div class="process-step fade-up">
+                    <div class="step-number">4</div>
+                    <h4>Offer &amp; Onboarding</h4>
+                    <p>
+                        Successful candidates receive an offer and begin their journey
+                        with Nilepet through our onboarding program.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CTA SECTION
+    ============================================================ -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Join Us?</h2>
+            <p>
+                Take the first step toward a rewarding career with South Sudan&rsquo;s
+                National Oil Company.
+            </p>
+            <div class="btn-group">
+                <a href="#openings" class="btn btn-primary">
+                    <i class="fas fa-arrow-right"></i> View Openings
+                </a>
+                <a href="index.html#contact" class="btn btn-white">
+                    <i class="fas fa-envelope"></i> Contact HR
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">N</span>
+                        Nile<span>Pet</span>
+                    </div>
+                    <p>
+                        South Sudan&rsquo;s National Oil Company, mandated to manage and develop
+                        the nation&rsquo;s petroleum resources for the benefit of all.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="business.html">Our Business</a></li>
+                        <li><a href="news.html">News &amp; Media</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Operations</h4>
+                    <ul>
+                        <li><a href="operations.html">Upstream</a></li>
+                        <li><a href="operations.html">Downstream</a></li>
+                        <li><a href="operations.html">Gas</a></li>
+                        <li><a href="operations.html">Joint Ventures</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="tenders.html">Tenders</a></li>
+                        <li><a href="news.html">PetroQuest Magazine</a></li>
+                        <li><a href="news.html">Annual Reports</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Nile Petroleum Corporation. All rights reserved.</span>
+                <span>
+                    <a href="#">Privacy Policy</a> &middot;
+                    <a href="#">Terms of Use</a> &middot;
+                    <a href="#">Accessibility</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    APPLICATION MODAL
+    ============================================================ -->
+    <div class="modal-overlay" id="careersModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-card">
+            <button class="close-modal" id="closeModalBtn" aria-label="Close application form">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-header">
+                <span class="section-label"><i class="fas fa-users"></i> Careers</span>
+                <h2 id="modalTitle">Join Our <span>Team</span></h2>
+                <p>Complete the form below to apply for a position at Nile Petroleum Corporation. We look forward to hearing from you.</p>
+            </div>
+
+            <form id="applicationForm" novalidate enctype="multipart/form-data">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. John Deng" required />
+                        <div class="error-message" id="fullNameError">Please enter your full name.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="e.g. john.deng@example.com" required />
+                        <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g. +211 912 345 678" required />
+                        <div class="error-message" id="phoneError">Please enter your phone number.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Position Applying For <span class="required">*</span></label>
+                        <select id="position" name="position" class="form-control" required>
+                            <option value="">â€” Select Position â€”</option>
+                            <option value="Petroleum Engineer">Petroleum Engineer</option>
+                            <option value="Geologist">Geologist</option>
+                            <option value="Drilling Supervisor">Drilling Supervisor</option>
+                            <option value="HSE Officer">HSE Officer</option>
+                            <option value="Finance Analyst">Finance Analyst</option>
+                            <option value="HR Specialist">HR Specialist</option>
+                            <option value="Legal Counsel">Legal Counsel</option>
+                            <option value="IT Systems Administrator">IT Systems Administrator</option>
+                            <option value="Operations Manager">Operations Manager</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <div class="error-message" id="positionError">Please select a position.</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="coverLetter">Cover Letter / Message</label>
+                    <textarea id="coverLetter" name="coverLetter" class="form-control" rows="4" placeholder="Tell us why you're interested in joining Nilepet and how your skills align with our mission."></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cvUpload">Upload CV / Resume <span class="required">*</span></label>
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="cvUpload" name="cvUpload" accept=".pdf,.doc,.docx" required />
+                            <span class="file-label">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span>Choose fileâ€¦</span>
+                            </span>
+                            <span class="file-name" id="cvFileName">No file chosen</span>
+                        </div>
+                        <div class="form-hint">Accepted formats: PDF, DOC, DOCX (max 5MB)</div>
+                        <div class="error-message" id="cvError">Please upload your CV (PDF, DOC, or DOCX).</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="certUpload">Supporting Documents (optional)</label>
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="certUpload" name="certUpload[]" accept=".pdf,.doc,.docx,.jpg,.png" multiple />
+                            <span class="file-label">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span>Choose filesâ€¦</span>
+                            </span>
+                            <span class="file-name" id="certFileName">No files chosen</span>
+                        </div>
+                        <div class="form-hint">Certificates, academic transcripts, or other relevant documents (max 10MB total)</div>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 8px;">
+                    <label style="display: flex; align-items: flex-start; gap: 10px; font-weight: 400; font-family: var(--font-body); cursor: pointer;">
+                        <input type="checkbox" id="termsCheck" name="termsCheck" style="width: 18px; height: 18px; margin-top: 3px; accent-color: var(--gold);" required />
+                        <span style="font-size: 0.9rem; color: var(--text-muted);">
+                            I confirm that the information provided is accurate and I agree to the
+                            <a href="#" style="color: var(--deep-blue); font-weight: 600;">Privacy Policy</a>
+                            and
+                            <a href="#" style="color: var(--deep-blue); font-weight: 600;">Terms of Use</a>.
+                            <span style="color: #e53e3e;">*</span>
+                        </span>
+                    </label>
+                    <div class="error-message" id="termsError">You must agree to the terms to submit your application.</div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline" id="cancelModalBtn">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Submit Application
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // ---- Mobile Menu ----
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburger.addEventListener('click', function() {
+                const expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                this.setAttribute('aria-expanded', expanded);
+                this.classList.toggle('active');
+                navLinks.classList.toggle('open');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    navLinks.classList.remove('open');
+                });
+            });
+
+            // ---- Sticky Navbar ----
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                if (currentScroll > 60) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // ---- Scroll Animations ----
+            const fadeElements = document.querySelectorAll('.fade-up');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.15,
+                rootMargin: '0px 0px -40px 0px'
+            });
+            fadeElements.forEach(el => observer.observe(el));
+
+            // ---- Search ----
+            document.querySelector('.search-btn').addEventListener('click', function() {
+                alert('ðŸ” Search functionality coming soon.');
+            });
+
+            // ---- Language toggle ----
+            const langBtn = document.querySelector('.lang-btn');
+            let lang = 'EN';
+            langBtn.addEventListener('click', function() {
+                lang = lang === 'EN' ? 'AR' : 'EN';
+                this.textContent = lang;
+            });
+
+            // ============================================================
+            //  JOBS DATA & FILTERING
+            // ============================================================
+            const jobsData = [{
+                id: 1,
+                title: 'Senior Petroleum Engineer',
+                department: 'engineering',
+                location: 'Juba & Oil Fields',
+                type: 'Full-time',
+                closing: 'August 15, 2026',
+                status: 'Open',
+                description: 'Lead reservoir engineering activities, optimize production, and mentor junior engineers in our upstream operations.'
+            }, {
+                id: 2,
+                title: 'Drilling Supervisor',
+                department: 'operations',
+                location: 'Unity State',
+                type: 'Full-time',
+                closing: 'August 10, 2026',
+                status: 'Open',
+                description: 'Oversee drilling operations, ensure safety compliance, and coordinate with contractors and support teams.'
+            }, {
+                id: 3,
+                title: 'HSE Officer',
+                department: 'operations',
+                location: 'Bentiu',
+                type: 'Full-time',
+                closing: 'August 5, 2026',
+                status: 'Closing Soon',
+                description: 'Implement health, safety, and environmental programs across operational sites, conduct audits and training.'
+            }, {
+                id: 4,
+                title: 'Finance Analyst',
+                department: 'corporate',
+                location: 'Juba HQ',
+                type: 'Full-time',
+                closing: 'August 20, 2026',
+                status: 'Open',
+                description: 'Support financial planning, budgeting, and reporting for the corporation\'s diverse operations.'
+            }, {
+                id: 5,
+                title: 'IT Systems Administrator',
+                department: 'it',
+                location: 'Juba HQ',
+                type: 'Full-time',
+                closing: 'August 12, 2026',
+                status: 'Closing Soon',
+                description: 'Manage and maintain IT infrastructure, networks, and systems across the organization.'
+            }, {
+                id: 6,
+                title: 'Geologist',
+                department: 'engineering',
+                location: 'Jonglei State',
+                type: 'Full-time',
+                closing: 'September 1, 2026',
+                status: 'Open',
+                description: 'Conduct geological surveys, analyze seismic data, and support exploration activities in new blocks.'
+            }, {
+                id: 7,
+                title: 'HR Specialist',
+                department: 'corporate',
+                location: 'Juba HQ',
+                type: 'Full-time',
+                closing: 'August 8, 2026',
+                status: 'Closing Soon',
+                description: 'Manage recruitment, employee relations, and talent development programs.'
+            }, {
+                id: 8,
+                title: 'Operations Manager',
+                department: 'operations',
+                location: 'Malakal',
+                type: 'Full-time',
+                closing: 'August 25, 2026',
+                status: 'Open',
+                description: 'Lead downstream operations, manage refinery activities, and ensure efficient product distribution.'
+            }];
+
+            const jobsContainer = document.getElementById('jobsContainer');
+            const filterButtons = document.querySelectorAll('#jobFilters .filter-btn');
+
+            function renderJobs(department) {
+                const filtered = department === 'all' ?
+                    jobsData :
+                    jobsData.filter(job => job.department === department);
+
+                if (filtered.length === 0) {
+                    jobsContainer.innerHTML = `
+                            <div style="grid-column: 1 / -1; text-align: center; padding: 40px 20px; color: var(--text-muted);">
+                                <i class="fas fa-inbox" style="font-size: 2.5rem; color: var(--medium-gray); margin-bottom: 12px; display: block;"></i>
+                                <h4 style="font-size: 1.2rem; color: var(--text-dark);">No positions found</h4>
+                                <p>Try selecting a different department.</p>
+                            </div>
+                        `;
+                    return;
+                }
+
+                jobsContainer.innerHTML = filtered.map(job => `
+                        <div class="job-card">
+                            <div class="job-header">
+                                <h3>${job.title}</h3>
+                                <span class="job-badge ${job.status === 'Closing Soon' ? 'closing' : ''}">${job.status}</span>
+                            </div>
+                            <div class="job-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> ${job.location}</span>
+                                <span><i class="fas fa-clock"></i> ${job.type}</span>
+                                <span><i class="fas fa-calendar-alt"></i> Closes: ${job.closing}</span>
+                            </div>
+                            <p>${job.description}</p>
+                            <div class="job-actions">
+                                <button class="btn-sm apply-btn" data-job="${job.title}">
+                                    <i class="fas fa-paper-plane"></i> Apply Now
+                                </button>
+                                <button class="btn-sm" onclick="alert('ðŸ“‹ Details for ${job.title} will be available soon.')">
+                                    <i class="fas fa-info-circle"></i> Details
+                                </button>
+                            </div>
+                        </div>
+                    `).join('');
+
+                // Attach apply button listeners
+                document.querySelectorAll('.apply-btn').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const jobTitle = this.dataset.job;
+                        document.getElementById('position').value = jobTitle;
+                        openModal();
+                    });
+                });
+            }
+
+            // Filter button click handlers
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    const filter = this.dataset.filter;
+                    renderJobs(filter);
+                });
+            });
+
+            // Initial render
+            renderJobs('all');
+
+            // ============================================================
+            //  MODAL LOGIC
+            // ============================================================
+            const modal = document.getElementById('careersModal');
+            const openBtn = document.getElementById('applyOnlineBtn');
+            const closeBtn = document.getElementById('closeModalBtn');
+            const cancelBtn = document.getElementById('cancelModalBtn');
+            const form = document.getElementById('applicationForm');
+
+            function openModal() {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                form.querySelectorAll('.form-control').forEach(el => el.classList.remove('error'));
+                form.querySelectorAll('.error-message').forEach(el => el.classList.remove('show'));
+            }
+
+            function closeModalFn() {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            // If there's an apply online button on the page (from the original design)
+            if (openBtn) {
+                openBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    openModal();
+                });
+            }
+
+            if (closeBtn) closeBtn.addEventListener('click', closeModalFn);
+            if (cancelBtn) cancelBtn.addEventListener('click', closeModalFn);
+
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) closeModalFn();
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) closeModalFn();
+            });
+
+            // ---- File upload display ----
+            const cvInput = document.getElementById('cvUpload');
+            const cvFileName = document.getElementById('cvFileName');
+            if (cvInput) {
+                cvInput.addEventListener('change', function() {
+                    cvFileName.textContent = this.files.length > 0 ? this.files[0].name : 'No file chosen';
+                });
+            }
+
+            const certInput = document.getElementById('certUpload');
+            const certFileName = document.getElementById('certFileName');
+            if (certInput) {
+                certInput.addEventListener('change', function() {
+                    if (this.files.length > 0) {
+                        const names = Array.from(this.files).map(f => f.name).join(', ');
+                        certFileName.textContent = names.length > 40 ? names.substring(0, 40) + 'â€¦' : names;
+                    } else {
+                        certFileName.textContent = 'No files chosen';
+                    }
+                });
+            }
+
+            // ---- Form validation ----
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    let isValid = true;
+
+                    function validateField(inputId, errorId, condition) {
+                        const input = document.getElementById(inputId);
+                        const error = document.getElementById(errorId);
+                        if (!condition) {
+                            input.classList.add('error');
+                            error.classList.add('show');
+                            isValid = false;
+                        } else {
+                            input.classList.remove('error');
+                            error.classList.remove('show');
+                        }
+                    }
+
+                    validateField('fullName', 'fullNameError', document.getElementById('fullName').value.trim()
+                        .length > 0);
+                    const email = document.getElementById('email');
+                    validateField('email', 'emailError', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()));
+                    validateField('phone', 'phoneError', document.getElementById('phone').value.trim().length > 0);
+                    validateField('position', 'positionError', document.getElementById('position').value !== '');
+
+                    const cv = document.getElementById('cvUpload');
+                    const cvError = document.getElementById('cvError');
+                    if (cv.files.length === 0) {
+                        cv.classList.add('error');
+                        cvError.classList.add('show');
+                        isValid = false;
+                    } else {
+                        cv.classList.remove('error');
+                        cvError.classList.remove('show');
+                    }
+
+                    const terms = document.getElementById('termsCheck');
+                    const termsError = document.getElementById('termsError');
+                    if (!terms.checked) {
+                        termsError.classList.add('show');
+                        isValid = false;
+                    } else {
+                        termsError.classList.remove('show');
+                    }
+
+                    if (!isValid) {
+                        const firstError = form.querySelector('.form-control.error');
+                        if (firstError) {
+                            firstError.focus({ preventScroll: true });
+                            firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                        return;
+                    }
+
+                    const submitButton = form.querySelector('button[type="submit"]');
+                    const originalButtonText = submitButton.innerHTML;
+                    submitButton.disabled = true;
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+
+                    const formData = new FormData(form);
+                    fetch('php/submit_application.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(async response => {
+                        const text = await response.text();
+                        let result = {};
+                        try {
+                            result = JSON.parse(text);
+                        } catch (error) {
+                            result = { success: false, message: text || 'Submission failed.' };
+                        }
+                        if (!response.ok || !result.success) {
+                            throw new Error(result.message || 'Submission failed.');
+                        }
+                        return result;
+                    })
+                    .then(() => {
+                        alert('✅ Thank you for your application!\n\nYour details have been submitted successfully. Our HR team will review your application and contact you shortly.\n\n— Nile Petroleum Corporation');
+                        form.reset();
+                        cvFileName.textContent = 'No file chosen';
+                        certFileName.textContent = 'No files chosen';
+                        form.querySelectorAll('.form-control').forEach(el => el.classList.remove('error'));
+                        form.querySelectorAll('.error-message').forEach(el => el.classList.remove('show'));
+                        closeModalFn();
+                    })
+                    .catch(error => {
+                        alert(error.message || 'Unable to submit your application right now. Please try again later.');
+                    })
+                    .finally(() => {
+                        submitButton.disabled = false;
+                        submitButton.innerHTML = originalButtonText;
+                    });
+                });
+            }
+
+            // ---- Smooth scroll for "View Openings" button ----
+            document.querySelector('.hero-cta .btn-primary').addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector('#openings');
+                if (target) {
+                    const offsetTop = target.getBoundingClientRect().top + window.pageYOffset -
+                        parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) -
+                        20;
+                    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>

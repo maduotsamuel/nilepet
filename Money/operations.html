@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Operations â€“ Nile Petroleum Corporation</title>
+    <meta name="description" content="Explore Nile Petroleum Corporation's operational footprint across South Sudan â€“ oil fields, refineries, pipelines, retail stations, and our commitment to operational excellence." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --deep-blue: #00072D;
+            --green: #000000;
+            --gold: #0A6ED3;
+            --white: #ffffff;
+            --light-gray: #f5f7fa;
+            --medium-gray: #e8ecf1;
+            --text-dark: #000000;
+            --text-muted: #1f1f1f;
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --radius: 12px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            --nav-height: 76px;
+        }
+
+        /* ===== Reset & Base ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== Typography ===== */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            background: rgba(10, 110, 211, 0.12);
+            padding: 4px 16px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--deep-blue);
+            margin-bottom: 16px;
+        }
+
+        .section-title span {
+            color: var(--gold);
+        }
+
+        .section-sub {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 640px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 14px 34px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--deep-blue);
+            box-shadow: 0 4px 16px rgba(10, 110, 211, 0.35);
+        }
+        .btn-primary:hover {
+            background: #0A6ED3;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(10, 110, 211, 0.45);
+        }
+
+        .btn-outline-blue {
+            background: transparent;
+            color: var(--deep-blue);
+            border: 2px solid var(--deep-blue);
+        }
+        .btn-outline-blue:hover {
+            background: var(--deep-blue);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--deep-blue);
+        }
+        .btn-white:hover {
+            background: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: var(--nav-height);
+            background: rgba(0, 7, 45, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            background: rgba(0, 7, 45, 0.98);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--white);
+            flex-shrink: 0;
+        }
+
+        .nav-logo .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--deep-blue);
+            font-size: 1.4rem;
+            font-weight: 900;
+            flex-shrink: 0;
+        }
+
+        .nav-logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: var(--transition);
+            letter-spacing: 0.2px;
+            position: relative;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--white);
+            background: rgba(10, 110, 211, 0.15);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 4px;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .nav-actions .search-btn,
+        .nav-actions .lang-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: none;
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-actions .search-btn:hover,
+        .nav-actions .lang-btn:hover {
+            background: rgba(10, 110, 211, 0.2);
+            color: var(--gold);
+        }
+
+        .lang-btn {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.7rem !important;
+            letter-spacing: 0.5px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--white);
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ============================================================
+           PAGE HERO
+        ============================================================ */
+        .page-hero {
+            padding: calc(var(--nav-height) + 48px) 0 60px;
+            background: var(--deep-blue);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero-bg {
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1581092335875-6f1b3b3b6d6f?w=1600&q=80') center/cover no-repeat;
+            opacity: 0.12;
+            transform: scale(1.05);
+        }
+
+        .page-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(0, 7, 45, 0.4) 0%, rgba(0, 7, 45, 0.9) 70%, #00072D 100%);
+        }
+
+        .page-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-hero .hero-content {
+            max-width: 700px;
+        }
+
+        .page-hero .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(10, 110, 211, 0.15);
+            border: 1px solid rgba(10, 110, 211, 0.2);
+            padding: 6px 18px 6px 12px;
+            border-radius: 50px;
+            color: var(--gold);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(4px);
+        }
+
+        .page-hero h1 {
+            font-size: clamp(2.4rem, 5vw, 4rem);
+            font-weight: 900;
+            color: var(--white);
+            line-height: 1.08;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-hero h1 .highlight {
+            color: var(--gold);
+        }
+
+        .page-hero p {
+            font-size: clamp(1rem, 1.3vw, 1.2rem);
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 540px;
+            line-height: 1.8;
+        }
+
+        /* ============================================================
+           OPERATIONAL FOOTPRINT MAP (Visual)
+        ============================================================ */
+        .footprint {
+            background: var(--white);
+            padding: 80px 0;
+        }
+
+        .footprint .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .footprint .section-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .map-visual {
+            position: relative;
+            background: var(--light-gray);
+            border-radius: var(--radius);
+            padding: 40px;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .map-visual .map-placeholder {
+            width: 100%;
+            height: 100%;
+            min-height: 320px;
+            background: linear-gradient(135deg, #00072D 0%, #0A6ED3 50%, #0A6ED3 100%);
+            border-radius: var(--radius);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.1);
+            font-size: 6rem;
+            position: relative;
+            padding: 40px;
+        }
+
+        .map-marker {
+            position: absolute;
+            color: var(--gold);
+            font-size: 1.8rem;
+            animation: pulse-marker 2s infinite;
+            text-shadow: 0 0 20px rgba(255, 184, 28, 0.3);
+        }
+
+        .map-marker .label {
+            position: absolute;
+            bottom: -28px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: var(--font-heading);
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--white);
+            white-space: nowrap;
+            background: rgba(0, 7, 45, 0.8);
+            padding: 2px 10px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .map-marker:nth-child(1) {
+            top: 20%;
+            left: 25%;
+        }
+        .map-marker:nth-child(2) {
+            top: 45%;
+            left: 40%;
+        }
+        .map-marker:nth-child(3) {
+            top: 30%;
+            left: 65%;
+        }
+        .map-marker:nth-child(4) {
+            top: 70%;
+            left: 30%;
+        }
+        .map-marker:nth-child(5) {
+            top: 55%;
+            left: 70%;
+        }
+        .map-marker:nth-child(6) {
+            top: 15%;
+            left: 50%;
+        }
+
+        @keyframes pulse-marker {
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.15);
+                opacity: 0.8;
+            }
+        }
+
+        /* ============================================================
+           KEY ASSETS
+        ============================================================ */
+        .assets {
+            background: var(--light-gray);
+            padding: 80px 0;
+        }
+
+        .assets .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .assets .section-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .assets-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .asset-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 32px 28px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 4px solid var(--gold);
+            text-align: center;
+        }
+
+        .asset-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .asset-card .asset-icon {
+            font-size: 2.6rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+        }
+
+        .asset-card h3 {
+            font-size: 1.15rem;
+            color: var(--deep-blue);
+            margin-bottom: 6px;
+        }
+
+        .asset-card .asset-count {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--gold);
+            font-family: var(--font-heading);
+            display: block;
+            margin: 6px 0 10px;
+        }
+
+        .asset-card p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* ============================================================
+           OPERATIONAL REGIONS
+        ============================================================ */
+        .regions {
+            background: var(--white);
+            padding: 80px 0;
+        }
+
+        .regions .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .regions .section-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .regions-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .region-card {
+            background: var(--light-gray);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+        .region-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .region-card .region-image {
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            color: rgba(255, 255, 255, 0.15);
+        }
+
+        .region-card .region-info {
+            padding: 24px 28px 28px;
+        }
+
+        .region-card .region-info h3 {
+            font-size: 1.2rem;
+            color: var(--deep-blue);
+            margin-bottom: 6px;
+        }
+
+        .region-card .region-info .region-location {
+            font-size: 0.85rem;
+            color: var(--gold);
+            font-weight: 600;
+            font-family: var(--font-heading);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .region-card .region-info p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* ============================================================
+           OPERATIONAL EXCELLENCE
+        ============================================================ */
+        .excellence {
+            background: var(--deep-blue);
+            padding: 80px 0;
+            color: var(--white);
+        }
+
+        .excellence .section-header {
+            text-align: center;
+        }
+        .excellence .section-header .section-sub {
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .excellence .section-title {
+            color: var(--white);
+        }
+        .excellence .section-title span {
+            color: var(--gold);
+        }
+
+        .excellence-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 48px;
+        }
+
+        .excellence-card {
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius);
+            padding: 32px 28px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: var(--transition);
+        }
+
+        .excellence-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-4px);
+        }
+
+        .excellence-card .ex-icon {
+            font-size: 2.4rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+        }
+
+        .excellence-card h4 {
+            font-size: 1.1rem;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .excellence-card p {
+            font-size: 0.92rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+        }
+
+        /* ============================================================
+           STATS BANNER
+        ============================================================ */
+        .stats-banner {
+            background: var(--gold);
+            padding: 50px 0;
+        }
+
+        .stats-banner .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stats-banner .stat-item .stat-number {
+            font-family: var(--font-heading);
+            font-weight: 900;
+            font-size: 2.8rem;
+            color: var(--deep-blue);
+            line-height: 1;
+            display: block;
+        }
+
+        .stats-banner .stat-item .stat-label {
+            font-size: 1rem;
+            color: rgba(0, 7, 45, 0.8);
+            margin-top: 8px;
+            display: block;
+            font-weight: 600;
+        }
+
+        /* ============================================================
+           CTA
+        ============================================================ */
+        .cta-section {
+            background: var(--light-gray);
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-section .cta-box {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 60px 48px;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section .cta-box h2 {
+            font-size: 2rem;
+            color: var(--deep-blue);
+            margin-bottom: 12px;
+        }
+
+        .cta-section .cta-box h2 span {
+            color: var(--gold);
+        }
+
+        .cta-section .cta-box p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 28px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section .cta-box .btn-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ============================================================
+           FOOTER
+        ============================================================ */
+        .footer {
+            background: var(--deep-blue);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .footer-brand .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: var(--white);
+            margin-bottom: 14px;
+        }
+
+        .footer-brand .logo .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--deep-blue);
+            font-weight: 900;
+        }
+
+        .footer-brand p {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            max-width: 300px;
+        }
+
+        .footer h4 {
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer ul li a:hover {
+            color: var(--gold);
+        }
+
+        .footer .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 6px;
+        }
+
+        .footer .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer .social-links a:hover {
+            background: var(--gold);
+            color: var(--deep-blue);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding-top: 28px;
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom a {
+            color: rgba(255, 255, 255, 0.5);
+            transition: var(--transition);
+        }
+
+        .footer-bottom a:hover {
+            color: var(--gold);
+        }
+
+        /* ============================================================
+           RESPONSIVE
+        ============================================================ */
+        @media (max-width: 1024px) {
+            .assets-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .excellence-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .stats-banner .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .regions-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            .map-visual {
+                padding: 20px;
+                min-height: 300px;
+            }
+            .map-visual .map-placeholder {
+                min-height: 240px;
+                font-size: 4rem;
+            }
+            .map-marker {
+                font-size: 1.4rem;
+            }
+            .map-marker .label {
+                font-size: 0.55rem;
+                bottom: -22px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --nav-height: 64px;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: var(--nav-height);
+                left: 0;
+                right: 0;
+                background: rgba(0, 7, 45, 0.98);
+                backdrop-filter: blur(12px);
+                flex-direction: column;
+                padding: 24px 28px 32px;
+                gap: 4px;
+                transform: translateY(-120%);
+                transition: var(--transition);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                max-height: calc(100vh - var(--nav-height));
+                overflow-y: auto;
+            }
+
+            .nav-links.open {
+                transform: translateY(0);
+            }
+
+            .nav-links a {
+                font-size: 1rem;
+                padding: 12px 16px;
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .nav-links a.active::after {
+                display: none;
+            }
+
+            .nav-links a.active {
+                background: rgba(10, 110, 211, 0.15);
+                color: var(--gold);
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-actions .search-btn,
+            .nav-actions .lang-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 0.9rem;
+            }
+
+            .page-hero {
+                padding: calc(var(--nav-height) + 32px) 0 40px;
+            }
+
+            section {
+                padding: 56px 0;
+            }
+
+            .assets-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .excellence-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 48px auto 0;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .stats-banner .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+
+            .stats-banner .stat-item .stat-number {
+                font-size: 2rem;
+            }
+
+            .cta-section .cta-box {
+                padding: 40px 24px;
+            }
+            .cta-section .cta-box h2 {
+                font-size: 1.6rem;
+            }
+            .cta-section .cta-box .btn-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cta-section .cta-box .btn-group .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .map-visual {
+                padding: 12px;
+                min-height: 240px;
+            }
+            .map-visual .map-placeholder {
+                min-height: 200px;
+                font-size: 3rem;
+            }
+            .map-marker {
+                font-size: 1.2rem;
+            }
+            .map-marker .label {
+                font-size: 0.5rem;
+                bottom: -18px;
+                padding: 1px 6px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-logo {
+                font-size: 1rem;
+            }
+            .nav-logo .logo-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 1.1rem;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .stats-banner .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            .stats-banner .stat-item .stat-number {
+                font-size: 1.6rem;
+            }
+            .stats-banner .stat-item .stat-label {
+                font-size: 0.85rem;
+            }
+
+            .map-marker {
+                font-size: 1rem;
+            }
+            .map-marker .label {
+                font-size: 0.45rem;
+                bottom: -16px;
+                padding: 1px 4px;
+            }
+        }
+
+        /* ============================================================
+           ANIMATIONS
+        ============================================================ */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================================
+           SCROLLBAR
+        ============================================================ */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--light-gray);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--deep-blue);
+            border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold);
+        }
+
+        /* ============================================================
+           UTILITY
+        ============================================================ */
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="index.html" class="nav-logo" aria-label="Nile Petroleum Corporation Home">
+                <span class="logo-icon">N</span>
+                Nile<span>Pet</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" role="menuitem">About Us</a></li>
+                <li role="none"><a href="business.html" role="menuitem">Our Business</a></li>
+                <li role="none"><a href="operations.html" role="menuitem" class="active">Operations</a></li>
+                <li role="none"><a href="news.html" role="menuitem">News &amp; Media</a></li>
+                <li role="none"><a href="careers.html" role="menuitem">Careers</a></li>
+                <li role="none"><a href="tenders.html" role="menuitem">Tenders</a></li>
+                <li role="none"><a href="index.html#contact" role="menuitem">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="search-btn" aria-label="Search" title="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="lang-btn" aria-label="Toggle language" title="Language">
+                    EN
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    PAGE HERO
+    ============================================================ -->
+    <section class="page-hero">
+        <div class="page-hero-bg" aria-hidden="true"></div>
+        <div class="page-hero-overlay" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    Our Operations
+                </div>
+                <h1>
+                    Where We Operate
+                </h1>
+                <p>
+                    From the oil fields of the north to the retail stations across the nation,
+                    Nilepet maintains a world-class operational footprint powering South Sudan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    OPERATIONAL FOOTPRINT MAP
+    ============================================================ -->
+    <section class="footprint">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label">Our Footprint</span>
+                <h2 class="section-title">Operational Map</h2>
+                <p class="section-sub">
+                    Nilepet operates across South Sudan's key petroleum basins and strategic locations.
+                </p>
+            </div>
+            <div class="map-visual fade-up">
+                <div class="map-placeholder">
+                    <span style="opacity:0.15; font-size:8rem;">ðŸ—ºï¸</span>
+                    <!-- Map markers -->
+                    <div class="map-marker" style="top:18%; left:22%;">
+                        <i class="fas fa-map-pin"></i>
+                        <span class="label">Bentiu</span>
+                    </div>
+                    <div class="map-marker" style="top:42%; left:38%;">
+                        <i class="fas fa-map-pin"></i>
+                        <span class="label">Juba HQ</span>
+                    </div>
+                    <div class="map-marker" style="top:28%; left:62%;">
+                        <i class="fas fa-map-pin"></i>
+                        <span class="label">Malakal</span>
+                    </div>
+                    <div class="map-marker" style="top:68%; left:28%;">
+                        <i class="fas fa-map-pin"></i>
+                        <span class="label">Yambio</span>
+                    </div>
+                    <div class="map-marker" style="top:52%; left:68%;">
+                        <i class="fas fa-map-pin"></i>
+                        <span class="label">Torit</span>
+                    </div>
+                    <div class="map-marker" style="top:12%; left:48%;">
+                        <i class="fas fa-map-pin"></i>
+                        <span class="label">Unity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    KEY ASSETS
+    ============================================================ -->
+    <section class="assets">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label">Our Assets</span>
+                <h2 class="section-title">Key Operational Assets</h2>
+                <p class="section-sub">
+                    Nilepet owns and operates a diverse portfolio of energy infrastructure across South Sudan.
+                </p>
+            </div>
+            <div class="assets-grid">
+                <div class="asset-card fade-up">
+                    <div class="asset-icon"><i class="fas fa-oil-well"></i></div>
+                    <h3>Oil Fields</h3>
+                    <span class="asset-count">12+</span>
+                    <p>Active oil fields across Unity, Upper Nile, and Jonglei states, producing high-quality crude oil.</p>
+                </div>
+                <div class="asset-card fade-up">
+                    <div class="asset-icon"><i class="fas fa-industry"></i></div>
+                    <h3>Refineries</h3>
+                    <span class="asset-count">2</span>
+                    <p>Modern refining facilities in Juba and Malakal with a combined capacity of 60,000 bpd.</p>
+                </div>
+                <div class="asset-card fade-up">
+                    <div class="asset-icon"><i class="fas fa-gas-pump"></i></div>
+                    <h3>Retail Stations</h3>
+                    <span class="asset-count">50+</span>
+                    <p>A growing network of retail fuel stations across all 10 states, serving communities and businesses.</p>
+                </div>
+                <div class="asset-card fade-up">
+                    <div class="asset-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Pipelines</h3>
+                    <span class="asset-count">1,200+ km</span>
+                    <p>Crude oil export pipelines and product distribution networks connecting fields to refineries and ports.</p>
+                </div>
+                <div class="asset-card fade-up">
+                    <div class="asset-icon"><i class="fas fa-warehouse"></i></div>
+                    <h3>Storage Depots</h3>
+                    <span class="asset-count">8</span>
+                    <p>Strategic storage facilities across the country with a total capacity of 5 million barrels.</p>
+                </div>
+                <div class="asset-card fade-up">
+                    <div class="asset-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Power Plants</h3>
+                    <span class="asset-count">3</span>
+                    <p>Gas-to-power plants providing electricity to industrial zones and communities in key regions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    OPERATIONAL REGIONS
+    ============================================================ -->
+    <section class="regions">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label">Regions</span>
+                <h2 class="section-title">Our Operational Regions</h2>
+                <p class="section-sub">
+                    Nilepet operates across South Sudan's most productive energy regions.
+                </p>
+            </div>
+            <div class="regions-grid">
+                <div class="region-card fade-up">
+                    <div class="region-image" style="background:linear-gradient(135deg, #00072D 0%, #0A6ED3 100%);">
+                        <span style="opacity:0.2; font-size:4rem;">ðŸ›¢ï¸</span>
+                    </div>
+                    <div class="region-info">
+                        <h3>Greater Unity Region</h3>
+                        <span class="region-location">Unity State</span>
+                        <p>
+                            Home to major oil fields including Unity, Toma South, and Manga. Nilepet operates
+                            extensive upstream facilities with significant production capacity and ongoing
+                            exploration activities.
+                        </p>
+                    </div>
+                </div>
+                <div class="region-card fade-up">
+                    <div class="region-image" style="background:linear-gradient(135deg, #0A6ED3 0%, #0A6ED3 100%);">
+                        <span style="opacity:0.2; font-size:4rem;">ðŸ—ï¸</span>
+                    </div>
+                    <div class="region-info">
+                        <h3>Upper Nile Basin</h3>
+                        <span class="region-location">Upper Nile State</span>
+                        <p>
+                            A prolific oil-producing region with fields like Palogue and Adar Yale. Nilepet
+                            maintains drilling operations, production facilities, and a major export pipeline
+                            corridor.
+                        </p>
+                    </div>
+                </div>
+                <div class="region-card fade-up">
+                    <div class="region-image" style="background:linear-gradient(135deg, #0A6ED3 0%, #0A6ED3 100%);">
+                        <span style="opacity:0.2; font-size:4rem;">â›½</span>
+                    </div>
+                    <div class="region-info">
+                        <h3>Juba Metropolitan Area</h3>
+                        <span class="region-location">Central Equatoria</span>
+                        <p>
+                            Headquarters and downstream hub. Home to our main refinery, product storage depots,
+                            corporate offices, and the largest concentration of retail stations serving the capital.
+                        </p>
+                    </div>
+                </div>
+                <div class="region-card fade-up">
+                    <div class="region-image" style="background:linear-gradient(135deg, #1a2a3a 0%, #2d3748 100%);">
+                        <span style="opacity:0.2; font-size:4rem;">ðŸ”¥</span>
+                    </div>
+                    <div class="region-info">
+                        <h3>Jonglei &amp; East</h3>
+                        <span class="region-location">Jonglei State</span>
+                        <p>
+                            Emerging exploration frontier with significant gas and oil potential. Nilepet is
+                            actively developing new production blocks and infrastructure in this promising region.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    OPERATIONAL EXCELLENCES
+    ============================================================ -->
+    <section class="excellence">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Operational Excellence<h2>
+                <p class="section-sub">
+                    Our commitment to safety, sustainability, and innovation drives everything we do.
+                </p>
+            </div>
+            <div class="excellence-grid">
+                <div class="excellence-card fade-up">
+                    <div class="ex-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Safety First</h4>
+                    <p>
+                        We maintain the highest safety standards across all operations with a zero-incident
+                        culture and continuous training programs.
+                    </p>
+                </div>
+                <div class="excellence-card fade-up">
+                    <div class="ex-icon"><i class="fas fa-leaf"></i></div>
+                    <h4>Environmental Stewardship</h4>
+                    <p>
+                        Sustainable practices, emissions reduction, and community environmental programs
+                        are integral to our operational approach.
+                    </p>
+                </div>
+                <div class="excellence-card fade-up">
+                    <div class="ex-icon"><i class="fas fa-microchip"></i></div>
+                    <h4>Technology &amp; Innovation</h4>
+                    <p>
+                        Leveraging cutting-edge technologies in exploration, drilling, and production to
+                        maximize efficiency and recovery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    STATS BANNER
+    ============================================================ -->
+    <section class="stats-banner">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-up">
+                    <span class="stat-number">12+</span>
+                    <span class="stat-label">Active Oil Fields</span>
+                </div>
+                <div class="stat-item fade-up">
+                    <span class="stat-number">1,200+</span>
+                    <span class="stat-label">Kilometres of Pipeline</span>
+                </div>
+                <div class="stat-item fade-up">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Retail Stations</span>
+                </div>
+                <div class="stat-item fade-up">
+                    <span class="stat-number">99.8%</span>
+                    <span class="stat-label">Operational Uptime</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CTA
+    ============================================================ -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box fade-up">
+                <span class="section-label"> Partner With Us</span>
+                <h2>Explore Opportunities</h2>
+                <p>
+                    Interested in doing business with Nilepet? Explore our procurement opportunities
+                    and partnership programs.
+                </p>
+                <div class="btn-group">
+                    <a href="tenders.html" class="btn btn-primary">
+                        <i class="fas fa-file-signature"></i> View Tenders
+                    </a>
+                    <a href="index.html#contact" class="btn btn-outline-blue">
+                        <i class="fas fa-envelope"></i> Contact Our Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">N</span>
+                        Nile<span>Pet</span>
+                    </div>
+                    <p>
+                        South Sudan&rsquo;s National Oil Company, mandated to manage and develop
+                        the nation&rsquo;s petroleum resources for the benefit of all.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="business.html">Our Business</a></li>
+                        <li><a href="news.html">News &amp; Media</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Operations</h4>
+                    <ul>
+                        <li><a href="operations.html">Oil Fields</a></li>
+                        <li><a href="operations.html">Refining</a></li>
+                        <li><a href="operations.html">Distribution</a></li>
+                        <li><a href="operations.html">Retail Network</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="tenders.html">Tenders</a></li>
+                        <li><a href="#">PetroQuest Magazine</a></li>
+                        <li><a href="#">Annual Reports</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Nile Petroleum Corporation. All rights reserved.</span>
+                <span>
+                    <a href="#">Privacy Policy</a> &middot;
+                    <a href="#">Terms of Use</a> &middot;
+                    <a href="#">Accessibility</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // ---- Mobile Menu ----
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburger.addEventListener('click', function() {
+                const expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                this.setAttribute('aria-expanded', expanded);
+                this.classList.toggle('active');
+                navLinks.classList.toggle('open');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    navLinks.classList.remove('open');
+                });
+            });
+
+            // ---- Sticky Navbar ----
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                if (currentScroll > 60) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // ---- Scroll Animations ----
+            const fadeElements = document.querySelectorAll('.fade-up');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.15,
+                rootMargin: '0px 0px -40px 0px'
+            });
+            fadeElements.forEach(el => observer.observe(el));
+
+            // ---- Search ----
+            document.querySelector('.search-btn').addEventListener('click', function() {
+                alert('ðŸ” Search functionality coming soon.');
+            });
+
+            // ---- Language toggle ----
+            const langBtn = document.querySelector('.lang-btn');
+            let lang = 'EN';
+            langBtn.addEventListener('click', function() {
+                lang = lang === 'EN' ? 'AR' : 'EN';
+                this.textContent = lang;
+            });
+
+        });
+    </script>
+
+</body>
+</html>
