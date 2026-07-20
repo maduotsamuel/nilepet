@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    document.documentElement.classList.add("animations-enabled");
-
     const activePage = document.body.getAttribute("data-page") || "home";
     const headerHost = document.getElementById("site-header");
     const footerHost = document.getElementById("site-footer");
@@ -132,32 +130,18 @@ document.addEventListener("DOMContentLoaded", function () {
         currentYear.textContent = new Date().getFullYear();
     }
 
-    const revealItems = Array.from(document.querySelectorAll(".fade-up"));
-    if (revealItems.length && "IntersectionObserver" in window) {
-        const revealObserver = new IntersectionObserver(
-            function (entries, observer) {
-                entries.forEach(function (entry) {
-                    if (!entry.isIntersecting) {
-                        return;
-                    }
+    document.addEventListener("click", function (event) {
+        const clickedLink = event.target.closest(".site-navbar .nav-link:not(.dropdown-toggle), .site-navbar .dropdown-item");
+        if (!clickedLink) {
+            return;
+        }
 
-                    entry.target.classList.add("is-visible");
-                    observer.unobserve(entry.target);
-                });
-            },
-            {
-                threshold: 0.2,
-                rootMargin: "0px 0px -8% 0px"
-            }
-        );
+        const collapseElement = clickedLink.closest(".navbar-collapse");
+        if (!collapseElement || !collapseElement.classList.contains("show")) {
+            return;
+        }
 
-        revealItems.forEach(function (item, index) {
-            item.style.transitionDelay = (index * 120) + "ms";
-            revealObserver.observe(item);
-        });
-    } else {
-        revealItems.forEach(function (item) {
-            item.classList.add("is-visible");
-        });
-    }
+        const collapse = bootstrap.Collapse.getOrCreateInstance(collapseElement);
+        collapse.hide();
+    });
 });
