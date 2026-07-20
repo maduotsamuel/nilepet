@@ -170,52 +170,51 @@
     box-shadow: 0 0 0 0.2rem rgba(126, 200, 227, 0.28);
 }
 
-html.animations-enabled .fade-up {
-    opacity: 0;
-    transform: translateY(24px);
-    filter: blur(4px);
-    transition:
-        opacity 0.75s ease,
-        transform 0.75s cubic-bezier(0.22, 1, 0.36, 1),
-        filter 0.75s ease;
-    will-change: opacity, transform, filter;
+.fade-up,
+body > section.fade-up,
+body > .site-footer.fade-up {
+    animation: sectionReveal 0.32s ease-out both;
 }
 
-html.animations-enabled .fade-up.is-visible {
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes sectionReveal {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
     opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
+    transform: none;
+    filter: none;
 }
 
-html.animations-enabled .site-navbar,
-html.animations-enabled .site-footer,
-html.animations-enabled .news-event-card,
-html.animations-enabled .business-card,
-html.animations-enabled .service-card,
-html.animations-enabled .feature-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-}
-
-html.animations-enabled .site-navbar:hover,
-html.animations-enabled .news-event-card:hover,
-html.animations-enabled .business-card:hover,
-html.animations-enabled .service-card:hover,
-html.animations-enabled .feature-card:hover {
-    transform: translateY(-4px);
+.site-navbar,
+.site-footer,
+.news-event-card,
+.business-card,
+.service-card,
+.feature-card {
+    transition: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html.animations-enabled .fade-up,
-    html.animations-enabled .fade-up.is-visible,
-    html.animations-enabled .site-navbar,
-    html.animations-enabled .site-footer,
-    html.animations-enabled .news-event-card,
-    html.animations-enabled .business-card,
-    html.animations-enabled .service-card,
-    html.animations-enabled .feature-card {
-        transition: none;
-        transform: none;
-        filter: none;
-        opacity: 1;
+    .fade-up,
+    body > section.fade-up,
+    body > .site-footer.fade-up {
+        animation: none;
+    }
+
+    html {
+        scroll-behavior: auto;
     }
 }
